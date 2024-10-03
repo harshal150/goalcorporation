@@ -1,17 +1,27 @@
 import React, { useState } from "react";
+import one from '../assets/partner/Frame1.png'
+import two from '../assets/partner/Frame2.png'
+import three from '../assets/partner/Frame3.png'
+import four from '../assets/partner/Frame4.png'
+import five from '../assets/partner/Frame5.png'
+import six from '../assets/partner/Frame6.png'
+import seven from '../assets/partner/Frame7.png'
+import eight from '../assets/partner/Frame8.png'
+import nine from '../assets/partner/Frame9.png'
+import ten from '../assets/partner/Frame10.png'
 
 const partners = [
   { name: "Unity", logo: "assets/partner/frame1.png" },
 //   { name: "Vastu Housing Finance", logo: "/assets/partner/frame1.png" },
-  { name: "IDFC First Bank", logo: "/assets/partner/frame2.png" },
-  { name: "Ashv Finance", logo: "/assets/partner/frame3.png" },
-  { name: "DBS Bank", logo: "/assets/partner/frame4.png" },
-  { name: "Edelweiss", logo: "/assets/partner/frame5.png" },
-  { name: "IIFL Finance", logo: "/assets/partner/frame6.png" },
-  { name: "Fullerton India", logo: "/assets/partner/frame7.png" },
-  { name: "Bank of Baroda", logo: "/assets/partner/frame8.png" },
-  { name: "InCred", logo: "/assets/partner/frame9.png" },
-  { name: "Fedfina", logo: "/assets/partner/frame10.png" },
+  { name: "IDFC First Bank", logo: one },
+  { name: "Ashv Finance", logo:two },
+  { name: "DBS Bank", logo: three},
+  { name: "Edelweiss", logo: four },
+  { name: "IIFL Finance", logo: five },
+  { name: "Fullerton India", logo: six },
+  { name: "Bank of Baroda", logo: seven},
+  { name: "InCred", logo: eight},
+  { name: "Fedfina", logo: nine},
 //   { name: "IndusInd Bank", logo: "/assets/partner/frame1.png" },
 //   { name: "PaySense", logo: "/assets/partner/frame1.png" },
 //   { name: "Fedbank", logo: "/assets/partner/frame1.png" },
