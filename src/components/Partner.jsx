@@ -11,7 +11,7 @@ import nine from '../assets/partner/Frame9.png'
 import ten from '../assets/partner/Frame10.png'
 
 const partners = [
-  { name: "Unity", logo: "assets/partner/frame1.png" },
+  { name: "Unity", logo: ten },
 //   { name: "Vastu Housing Finance", logo: "/assets/partner/frame1.png" },
   { name: "IDFC First Bank", logo: one },
   { name: "Ashv Finance", logo:two },
