@@ -101,7 +101,7 @@ const ContentItem = ({ index, item, onHoverChange }) => {
         className="absolute top-4 right-4 w-16 h-16 ml-4 rounded-full object-cover border-2 border-white shadow-md"
       />
 
-      <h3 className="text-2xl font-extrabold text-blue-400 mb-9 pr-5">
+      <h3 className="text-3xl font-extrabold text-blue-400 mb-9 pr-5">
         <Link to="/homeloan">{item.title}</Link>
       </h3>
 

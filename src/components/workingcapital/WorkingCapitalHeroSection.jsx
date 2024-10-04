@@ -1,60 +1,23 @@
 
 
 import React from 'react';
-import workignCapital from '../../assets/loans/Working capital.webp';
+import workignCapital from '../../assets/loans/wcapital.png';
 
 const WorkingCapitalHeroSection = () => {
   return (
     <div className="relative">
       {/* Hero Image */}
       <img src={workignCapital} alt="Home Loan" className="w-full h-[80vh] object-cover" />
-      
+      <div className="absolute inset-0 bg-sky-400 opacity-20"></div>
+
       {/* Text Overlay */}
       <div className="absolute top-0 left-0  h-full flex flex-col justify-center items-left ml-36 text-white">
-        <h1 className="text-4xl font-bold mb-4 text-left text-[#16BBF3]">Goal Corporation offers flexible<br></br> Working Capital loans to help<br></br> businesses manage <br></br>daily operations and maintain <br></br>cash flow stability.</h1>
+        <h1 className="text-3xl font-bold mb-4 text-left text-[#4e4ec9]">Goal Corporation offers flexible Working<br></br>  Capital loans to help businesses manage <br></br>daily operations and maintain <br></br>cash flow stability.</h1>
         {/* <p className="text-lg mb-6 text-bold">Unlock your Property into Capital with our Flexible Loan Against Property Option. <br></br>Enjoy Lower Interest Rates with Instant Approval</p> */}
-        <button className="bg-red-500 text-white py-2 px-6 rounded-lg hover:bg-red-600 transition w-[30%]">Apply Now</button>
-      </div>
-      
-      {/* SVG Shape Divider */}
-      <div className="custom-shape-divider-bottom-1727767080">
-        <svg
-          data-name="Layer 1"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1200 120"
-          preserveAspectRatio="none"
-        >
-          <path
-            d="M598.97 114.72L0 0 0 120 1200 120 1200 0 598.97 114.72z"
-            className="shape-fill"
-          />
-        </svg>
+        <button className="bg-red-500 text-white py-2 px-6 rounded-lg hover:bg-red-600 transition w-[25%]">Apply Now</button>
       </div>
 
-      {/* Custom CSS for the shape divider */}
-      <style>
-        {`
-          .custom-shape-divider-bottom-1727767080 {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            overflow: hidden;
-            line-height: 0;
-          }
 
-          .custom-shape-divider-bottom-1727767080 svg {
-            position: relative;
-            display: block;
-            width: calc(137% + 1.3px);
-            height: 81px;
-          }
-
-          .custom-shape-divider-bottom-1727767080 .shape-fill {
-            fill: #FFFFFF; /* Color of the curve */
-          }
-        `}
-      </style>
     </div>
   );
 };

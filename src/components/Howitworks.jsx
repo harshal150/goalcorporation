@@ -1,19 +1,19 @@
 import React, { useRef, useEffect, useState } from "react";
 import PropTypes from "prop-types";
-import one from '../assets/Whychoose/11.jpg'
-import two from '../assets/Whychoose/22.jpg'
-import three from '../assets/Whychoose/3.jpg'
-import four from '../assets/Whychoose/44.jpg'
+import one from '../assets/HowItWorks/1.avif'
+import two from '../assets/HowItWorks/2.jpg'
+import three from '../assets/HowItWorks/3.jpg'
+import four from '../assets/HowItWorks/44.jpg'
 
 const contents = [
   {
     image: one,
-    title: "Dedicated relationship manager",
+    title: "Dedicated Relationship Manager",
     text: "Our team is dedicated to building long-term relationships with clients, providing personalized support and guidance throughout your financial journey.",
   },
   {
     image: two,
-    title: "Easy approval",
+    title: "Easy Approval",
     text: "Get expert advice and assistance from your dedicated manager, ensuring all your financial needs are met efficiently and effectively.",
   },
   {
@@ -38,14 +38,14 @@ const ContentItem = ({ item }) => (
         className="w-28 h-28 mx-auto rounded-full border border-gray-300"
       />
       {/* Title with improved styling */}
-      <h4 className="my-4 font-extrabold text-2xl text-left text-[#1A237E] leading-tight">
+      <h4 className="my-4 font-extrabold text-2xl text-left text-[#60A5FA] leading-tight">
         {item.title}
       </h4>
       {/* Description aligned to the left */}
       <p className="opacity-75 mb-4 text-black text-left">{item.text}</p>
     </div>
     {/* Smaller Button */}
-    <button className="rounded-2xl py-2 px-4 text-[15px] font-semibold bg-[#1A237E] text-white hover:bg-[#4955d3] mt-4 transition duration-300 ease-in-out">
+    <button className="rounded-lg py-2 px-4 text-[15px] font-semibold bg-green-400 text-white  mt-4 transition duration-300 ease-in-out hover:bg-blue-600 hover:scale-105">
       Learn More
     </button>
   </div>

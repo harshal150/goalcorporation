@@ -12,11 +12,13 @@ import Timeline from '../components/Timeline'
 import About from '../components/About'
 import MapComponent from '../components/MapComponent'
 import ApplyForLoan from '../components/ApplyForLoan'
+import Header from '../components/Header'
 export const Home = () => {
   return (
     <div>
        <Navbar />
-        <MainSection/>
+       <Header/>
+        {/* <MainSection/> */}
         <ApplyForLoan/>
         <Services/>
         {/* <Descciption /> */}

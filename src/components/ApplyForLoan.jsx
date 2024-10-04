@@ -1,34 +1,45 @@
 import React from "react";
 
 const ApplyForLoan = () => {
-	return (
-		<section className="ezy__cta2 light relative overflow-hidden py-10 md:py-20 bg-[#32b1db]">
-			{/* shapes */}
-			<div className="w-[400px] h-[400px] bg-white bg-opacity-5 rounded-full -m-[100px] absolute left-0 top-0"></div>
-			<div className="w-[400px] h-[400px] bg-white bg-opacity-5 rounded-full -m-[100px] absolute right-0 bottom-0"></div>
+  return (
+    <section className="ezy__cta2 relative overflow-hidden py-10 md:py-12 bg-gradient-to-r from-sky-500 to-blue-900">
+      {/* Decorative Shapes */}
+      <div className="absolute w-[400px] h-[400px] bg-white bg-opacity-10 rounded-full left-[-150px] top-[-150px] animate-pulse"></div>
+      <div className="absolute w-[300px] h-[300px] bg-white bg-opacity-10 rounded-full right-[-100px] top-[-100px] animate-pulse"></div>
+      <div className="absolute w-[200px] h-[200px] bg-white bg-opacity-10 rounded-full left-[200px] top-[50%] animate-pulse"></div>
+      <div className="absolute w-[150px] h-[150px] bg-white bg-opacity-10 rounded-full right-[200px] top-[60%] animate-pulse"></div>
 
-			<div className="container relative px-4">
-				<div className="grid grid-cols-12 justify-between items-center text-white">
-					{/* Text on the left with padding */}
-					<div className="col-span-6 text-left pl-20">
-						<h2 className="text-2xl md:text-[45px] leading-none font-bold">
-						Your Loan is Just a Click Away
-						</h2>
-					</div>
+      {/* Additional shapes for more depth */}
+      <div className="absolute w-[120px] h-[120px] bg-[#ffffff33] rounded-full left-[50%] top-[40%] transform -translate-x-1/2 animate-bounce"></div>
+      <div className="absolute w-[80px] h-[80px] bg-[#ffffff33] rounded-full right-[50%] bottom-[30%] transform translate-x-1/2 animate-bounce"></div>
+      <div className="absolute w-[50px] h-[50px] bg-[#ffffff33] rounded-full left-[10%] bottom-[20%] animate-bounce delay-200"></div>
+      <div className="absolute w-[70px] h-[70px] bg-[#ffffff33] rounded-full right-[20%] top-[70%] animate-bounce delay-400"></div>
 
-					{/* Button on the right with padding */}
-					<div className="col-span-6 text-right pr-8">
-						<button
-							type="submit"
-							className="bg-white text-black font-bold py-3 px-7 rounded transition"
-						>
-							Apply for loan
-						</button>
-					</div>
-				</div>
-			</div>
-		</section>
-	);
+      <div className="container relative px-4">
+        <div className="grid grid-cols-12 justify-between items-center text-white">
+          {/* Text Section */}
+          <div className="col-span-12 md:col-span-6 text-left pl-8 md:pl-20 space-y-4">
+            <h2 className="text-3xl md:text-[48px] leading-tight font-bold">
+              Your Loan is Just a Click Away
+            </h2>
+            <p className="text-lg md:text-xl">
+              Get financial support with the fastest and simplest loan application process. Apply now!
+            </p>
+          </div>
+
+          {/* Button Section */}
+          <div className="col-span-12 md:col-span-6 text-left md:text-right pr-8">
+            <button
+              type="submit"
+              className="bg-[#3B82F6]  hover:scale-105 text-white font-bold py-3 px-10 rounded-full shadow-lg transition-all duration-300 ease-in-out transform"
+            >
+              Apply for Loan
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 };
 
 export default ApplyForLoan;

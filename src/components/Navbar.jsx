@@ -7,13 +7,13 @@ export const Navbar = () => {
 
   return (
     <nav
-      className="bg-[#fff] z-50 relative m-5 rounded-xl sticky top-2 " // Set z-index high enough to show above background
+      className="bg-[#fff] z-50 relative  sticky top-0 " // Set z-index high enough to show above background
       style={{ boxShadow: " 2px 2px 2px 2px rgba(255, 255, 255, 0.15)" }}
 
 
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-24">
+        <div className="flex justify-between items-center h-18">
           {/* Logo */}
           <div className="flex-shrink-0">
             <a href="./" className="text-black font-bold text-xl">
@@ -163,12 +163,11 @@ export const Navbar = () => {
 
      
 
-            <a
-              href="/"
+            <Link to='/contact'
               className="text-black hover:text- px-3 py-2 rounded-md text-lg text-[30px] font-bold"
             >
               Contact us
-            </a>
+            </Link>
 
 
             <a
