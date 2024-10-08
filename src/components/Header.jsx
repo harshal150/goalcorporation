@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import one from '../assets/Header/1.Phih8P4ACnRCSURBVHic7P15tK35fdf5vX';
-import two from '../assets/Header/2.png';
-import four from '../assets/Header/4.webp';
-import three from '../assets/Header/3.qyqrOvtrund6entmdquwS0INcEUsiWkStMEVCTFEsgGKIi2SkigLIVlSmA75I0JTbcsORTjksB02f0gOy6Qt2UJLNkOkCEoghB6CAASQTQK76N7dmd7Znpme7q6urs6qys';
+import one from '../assets/Header/new1.jpg';
+import two from '../assets/Header/new2.jpg';
+
 
 const Header = () => {
   const carouselData = [
@@ -19,13 +18,13 @@ const Header = () => {
         "Save on interest costs by transferring your existing loan to us at lower rates. Enjoy easy repayment options and better financial management with our balance transfer solutions.",
     },
     {
-      image: three,
+      image: one,
       title: "Debt Consolidation & Refinance",
       description:
         "Combine multiple debts into one manageable loan or refinance existing loans to reduce your financial burden and simplify your payments.",
     },
     {
-      image: four,
+      image: two,
       title: "Lease Rental Discounting",
       description:
         "Unlock the potential of your rental income by availing loans against future lease rentals, ensuring steady cash flow and financial stability for your business.",
@@ -77,7 +76,7 @@ const Header = () => {
 
       {/* Image Section */}
       <div className="w-full sm:order-2 order-1 mt-6 lg:mt-0 lg:w-1/2 h-48 sm:h-60 md:h-[30vh] lg:h-[40vh] xl:h-[70vh] 2xl:h-[80vh] flex justify-center items-center">
-        <img src={image} alt={title} className="max-w-full h-auto object-contain" />
+        <img src={image} alt={title} className="max-w-full h-auto object-contain mix-blend-multiply" />
       </div>
     </div>
   );

@@ -13,23 +13,25 @@ import About from '../components/About'
 import MapComponent from '../components/MapComponent'
 import ApplyForLoan from '../components/ApplyForLoan'
 import Header from '../components/Header'
+
 export const Home = () => {
   return (
-    <div>
-       <Navbar />
-       <Header/>
-        {/* <MainSection/> */}
-        <ApplyForLoan/>
-        <Services/>
-        {/* <Descciption /> */}
-      <Howitworks />
-      <LoanCalculator />
-      <About />
-      <Timeline />
+    <div className="home-page-container" style={{ overflowX: 'hidden' }}>
+      <Navbar />
+      <Header />
 
-      <MapComponent />
+      <div className="component-wrapper">
+        <ApplyForLoan />
+        <Services />
+        <Howitworks />
+        <LoanCalculator />
+        <About />
+        <Timeline />
+        <MapComponent />
         <Message />
-        <Footer />
+      </div>
+
+      <Footer />
     </div>
   )
 }
