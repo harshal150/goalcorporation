@@ -1,10 +1,8 @@
-import React from "react";
+import React, { useState, useEffect, useRef } from "react";
 import {
   FaRocket,
   FaHandshake,
-  FaGlobe,
   FaBriefcase,
-  FaRupeeSign,
   FaChartLine,
 } from "react-icons/fa";
 import logo1 from "../assets/pinkTag.svg";
@@ -36,14 +34,6 @@ const timelineData = [
     position: "top",
   },
   {
-    year: "2012",
-    title:
-      "Goal Corporation becomes Private Limited company and achieved 100cr disbursal volume",
-    icon: <FaGlobe />,
-    logo: logo1,
-    position: "bottom",
-  },
-  {
     year: "2016",
     title:
       "Journey of Philanthropy begins with establishing of Goal International school",
@@ -54,7 +44,7 @@ const timelineData = [
   {
     year: "2017",
     title:
-      `Goal Expands its wings with establishing 3 more companies. Goal Infrastructure 2017: Goal BioMedicals 2021: Hubstairs CoWorks`,
+      "Goal Expands its wings with establishing 3 more companies. Goal Infrastructure 2017: Goal BioMedicals 2021: Hubstairs CoWorks",
     icon: <FaBriefcase />,
     logo: logo1,
     position: "bottom",
@@ -62,7 +52,7 @@ const timelineData = [
   {
     year: "2024",
     title:
-      "All GOAL financial business under one umbrella       Goal Corporation Pvt Ltd.",
+      "All GOAL financial business under one umbrella Goal Corporation Pvt Ltd.",
     icon: <FaChartLine />,
     logo: logo2,
     position: "top",
@@ -70,36 +60,73 @@ const timelineData = [
 ];
 
 const Timeline = () => {
+  const [visibleItems, setVisibleItems] = useState([]);
+  const itemRefs = useRef([]);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setVisibleItems((prevVisibleItems) => [
+              ...prevVisibleItems,
+              entry.target.dataset.index,
+            ]);
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    itemRefs.current.forEach((item) => {
+      if (item) observer.observe(item);
+    });
+
+    return () => {
+      itemRefs.current.forEach((item) => {
+        if (item) observer.unobserve(item);
+      });
+    };
+  }, []);
+
+  const isItemVisible = (index) => visibleItems.includes(String(index));
+
   return (
     <>
-      <h1 className=" font-bold text-[40px] text-center mt-16">
+    <div className=" bg-gradient-to-r from-white via-[#f5f8fc] to-[#E0EAF5] p-2">
+
+    <h1 className="font-bold text-[40px] text-center mt-20 uppercase text-blue-700 ">
         We Have The Best Team And The Best Process
       </h1>
       <div className="relative flex justify-center items-start mt-14">
         {/* Timeline container */}
         <div className="flex justify-between align-middle items-center w-full max-w-7xl space-x-16">
           {timelineData.map((item, index) => (
-            <div key={index} className="flex flex-col items-center w-1/6">
-              {/* If position is 'top', title and dotted line are displayed above the image */}
+            <div
+              key={index}
+              data-index={index}
+              ref={(el) => (itemRefs.current[index] = el)}
+              className={`flex flex-col items-center w-1/6 transition-transform duration-1000 ease-out ${
+                isItemVisible(index)
+                  ? "translate-x-0 opacity-100"
+                  : "translate-x-full opacity-0"
+              }`}
+            >
               {item.position === "top" && (
                 <>
-                  {/* Title */}
-                  <div className="mb-4"> {/* Reduced margin */}
+                  <div className="mb-4">
                     <p className="text-center font-semibold text-gray-600 text-sm">
                       {item.title}
                     </p>
                   </div>
-
-                  {/* Dotted Line */}
-                  <div className="relative mb-2"> {/* Reduced margin */}
-                    <div className="absolute left-1/2 transform -translate-x-1/2 w-0.5 h-10 border-dotted border-green-400 border-l-2"></div> {/* Reduced height */}
+                  <div className="relative mb-2">
+                    <div className="absolute left-1/2 transform -translate-x-1/2 w-0.5 h-10 border-dotted border-green-400 border-l-2"></div>
                   </div>
                 </>
               )}
 
-              {/* Small Image above Logo 1 (if position is 'bottom') */}
               {item.position === "bottom" && (
-                <div className="mb-2"> {/* Reduced margin */}
+                <div className="mb-2">
                   <img
                     src={images[index]}
                     alt={`small image ${index}`}
@@ -108,21 +135,19 @@ const Timeline = () => {
                 </div>
               )}
 
-              {/* Image with Year */}
               <div className="relative">
                 <img
                   src={item.logo}
                   alt={`timeline icon ${index}`}
-                  className="h-32 w-32"  // Reduced size
+                  className="h-32 w-32"
                 />
                 <div className="absolute inset-0 flex justify-center items-center">
                   <p className="text-black font-bold text-lg">{item.year}</p>
                 </div>
               </div>
 
-              {/* Small Image below Logo 2 (if position is 'top') */}
               {item.position === "top" && (
-                <div className="mt-2"> {/* Reduced margin */}
+                <div className="mt-2">
                   <img
                     src={images[index]}
                     alt={`small image ${index}`}
@@ -131,16 +156,12 @@ const Timeline = () => {
                 </div>
               )}
 
-              {/* If position is 'bottom', title and dotted line are displayed below the image */}
               {item.position === "bottom" && (
                 <>
-                  {/* Dotted Line */}
-                  <div className="relative mt-2"> {/* Reduced margin */}
-                    <div className="absolute left-1/2 transform -translate-x-1/2 w-0.5 h-10 border-dotted border-green-400 border-l-2"></div> {/* Reduced height */}
+                  <div className="relative mt-2">
+                    <div className="absolute left-1/2 transform -translate-x-1/2 w-0.5 h-10 border-dotted border-green-400 border-l-2"></div>
                   </div>
-
-                  {/* Title */}
-                  <div className="mt-16"> {/* Reduced margin */}
+                  <div className="mt-16">
                     <p className="text-center font-semibold text-gray-600 text-sm">
                       {item.title}
                     </p>
@@ -151,6 +172,8 @@ const Timeline = () => {
           ))}
         </div>
       </div>
+    </div>
+
     </>
   );
 };

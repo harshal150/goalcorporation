@@ -7,6 +7,8 @@ import VisionMission from '../components/about/VissionMission'
 import DirectorMsg from '../components/about/DirectorMsg'
 import Ourteam from '../components/about/OurTeam'
 import AboutInfo from '../components/about/AboutInfo'
+import GroupCompany from '../components/about/GroupCompany'
+import RewardsRecog from '../components/about/RewardsRecog'
 
 
 const About = () => {
@@ -19,6 +21,8 @@ const About = () => {
         <DirectorMsg/>
         <VisionMission/>
         <Ourteam/>
+        <GroupCompany/>
+        <RewardsRecog/>
         <Footer/>
     </div>
   )

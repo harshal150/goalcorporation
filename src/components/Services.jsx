@@ -101,7 +101,7 @@ const ContentItem = ({ index, item, onHoverChange }) => {
         className="absolute top-4 right-4 w-16 h-16 ml-4 rounded-full object-cover border-2 border-white shadow-md"
       />
 
-      <h3 className="text-3xl font-extrabold text-blue-400 mb-9 pr-5">
+      <h3 className="text-3xl font-extrabold text-blue-600 mb-9 pr-5">
         <Link to="/homeloan">{item.title}</Link>
       </h3>
 
@@ -150,15 +150,15 @@ const Services = () => {
   }, [isHovered]);
 
   return (
-    <section className="ezy__howitworks12 text-black bg-[#E0F7FA] py-14 md:py-24 relative overflow-hidden z-[10]">
+    <section className="ezy__howitworks12 text-black bg-[#E0F7FA] py-14 md:py-24 text-center relative overflow-hidden z-[10]">
       <div className="container px-4">
-        <h2 className="text-2xl md:text-[45px] text-[#1A237E] leading-none text-center mx-16 font-bold tracking-wide uppercase mb-2 transition-transform duration-300 ease-in-out transform hover:scale-105 text-gradient">
+        <h2 className="text-2xl md:text-[45px]  text-center text-[#1A237E] leading-none  mx-16 font-bold tracking-wide uppercase mb-2 transition-transform duration-300 ease-in-out transform hover:scale-105 text-gradient">
           Committed to Provide Best Services for All Your Loan Requirements
         </h2>
 
         <div
           ref={scrollContainerRef}
-          className={`flex gap-4 mt-12 md:mt-20 scrollbar-hide snap-x snap-mandatory scroll-smooth animate-scroll ${
+          className={`flex gap-2 mt-12 md:mt-20 scrollbar-hide snap-x snap-mandatory scroll-smooth animate-scroll ${
           !isHovered ? "pause-animation" : ""
         }`}
         >
