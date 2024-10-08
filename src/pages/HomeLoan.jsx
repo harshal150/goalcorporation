@@ -4,6 +4,7 @@ import HeroSection from '../components/homeloan/HeroSection'
 import Footer from '../components/Footer'
 import AboutHomeLoan from '../components/homeloan/AboutHomeLoan'
 import TestimonialSlider from '../components/homeloan/TestimonialSlider'
+import HomeFAQ from '../components/homeloan/HomeFAQ'
 
 
 const HomeLoan = () => {
@@ -13,7 +14,8 @@ const HomeLoan = () => {
 
       <HeroSection/>
       <AboutHomeLoan/>
-      <TestimonialSlider/>
+      <HomeFAQ/>
+      {/* <TestimonialSlider/> */}
       <Footer/>
     </div>
   )

@@ -44,14 +44,14 @@ const AboutWorkingCapital = () => {
 
        <section className="max-w-full mx-36 p-8 bg-white rounded-2xl shadow-2xl border border-gray-200 mt-10 mb-6">
   {/* Title */}
-  <h2 className="text-4xl font-bold text-center text-gray-800 mb-8">
+  <h2 className="text-4xl font-bold text-center text-blue-600 uppercase mb-8">
     Working Capital Loan Eligibility
   </h2>
 
-  {/* Description with Link */}
+  {/* Description with Link
   <p className="text-lg text-center text-gray-600 mb-8">
     The basic <a href="#" className="text-blue-600 hover:underline">working capital loan eligibility</a> criteria are as follows:
-  </p>
+  </p> */}
 
   {/* Age Section */}
   <div className="mb-6">
@@ -92,10 +92,10 @@ const AboutWorkingCapital = () => {
 
 
 
-    <section className="max-w-full  p-6 bg-gradient-to-r from-white via-[#f5f8fc] to-[#E0EAF5] text-gray-800">
+    <section className="max-w-full  p-6 bg-gradient-to-r from-white via-[#d3e2f7] to-[#aac6e3] text-gray-800">
 <div className='mx-36'>
         {/* Title */}
-        <h2 className="text-4xl font-bold mb-6 text-center mt-8 ">Documents required to apply for Working Capital Loan
+        <h2 className="text-4xl font-bold mb-6 text-center text-blue-600 uppercase mt-8 ">Documents required to apply for Working Capital Loan
 </h2>
 
 
@@ -121,7 +121,7 @@ const AboutWorkingCapital = () => {
 
 
     <div>
-    <h2 className="text-4xl font-bold mb-6 text-center mt-8 ">Fees and Charges for Working Capital Loan</h2>
+    <h2 className="text-4xl font-bold mb-6 text-center text-blue-600 uppercase mt-8 ">Fees and Charges for Working Capital Loan</h2>
     
         <img src={Homeloan} alt='' className='w-full h-full'/>
     </div>

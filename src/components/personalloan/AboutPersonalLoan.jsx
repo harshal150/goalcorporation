@@ -46,7 +46,7 @@ const AboutPersonalLoan = () => {
 
        <section className="max-w-full mx-36 p-8 bg-white rounded-2xl shadow-2xl border border-gray-200 mt-10 mb-6">
   {/* Title */}
-  <h2 className="text-4xl font-bold text-center text-gray-800 mb-8">
+  <h2 className="text-4xl font-bold text-center text-blue-600 uppercase mb-8">
     Personal Loan Eligibility Criteria
   </h2>
 
@@ -70,11 +70,11 @@ const AboutPersonalLoan = () => {
 </section>
 
 
-    <section className="max-w-full  p-6 bg-white text-gray-800  bg-gradient-to-r from-white via-[#f5f8fc] to-[#E0EAF5]" >
+    <section className="max-w-full  p-6 bg-white text-gray-800 bg-gradient-to-r from-white via-[#d3e2f7] to-[#aac6e3]" >
 <div className='mx-36'>
 
         {/* Title */}
-        <h2 className="text-4xl font-bold mb-6 text-center mt-8 ">Documents required to apply for Personal Loan
+        <h2 className="text-4xl font-bold mb-6 text-center text-blue-600 uppercase mt-8 ">Documents required to apply for Personal Loan
 </h2>
 
       <ul className="list-disc list-inside space-y-4 text-gray-700">
@@ -111,7 +111,7 @@ const AboutPersonalLoan = () => {
 
 
     <div>
-    <h2 className="text-4xl font-bold mb-6 text-center mt-8 ">Fees and Charges for Personal Loan</h2>
+    <h2 className="text-4xl font-bold mb-6 text-center text-blue-600 uppercase mt-8 ">Fees and Charges for Personal Loan</h2>
     
         <img src={personal} alt='' className='w-full h-full'/>
     </div>

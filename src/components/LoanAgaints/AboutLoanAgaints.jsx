@@ -42,7 +42,7 @@ const AboutLoanAgaints = () => {
 
        <section className="max-w-full mx-36 p-8 bg-white rounded-2xl shadow-2xl border border-gray-200 mt-10 mb-6">
   {/* Title */}
-  <h2 className="text-3xl font-bold text-gray-800 mb-8">Eligibility Criteria for Loan against Property</h2>
+  <h2 className="text-3xl font-bold text-center text-blue-600 uppercase mb-8">Eligibility Criteria for Loan against Property</h2>
 
   {/* Eligibility List */}
   <ul className="list-none space-y-6 text-gray-700">
@@ -68,10 +68,10 @@ const AboutLoanAgaints = () => {
 </section>
 
 
-    <section className="max-w-full  p-6 bg-white text-gray-800 bg-gradient-to-r from-white via-[#f5f8fc] to-[#E0EAF5]">
+    <section className="max-w-full  p-6 bg-gradient-to-r from-white via-[#d3e2f7] to-[#aac6e3]">
 <div className='mx-36'>
         {/* Title */}
-        <h2 className="text-4xl font-bold mb-6 text-center mt-8 ">Documents required to apply for Loan Against Property
+        <h2 className="text-4xl font-bold mb-6 text-center text-blue-600 uppercase mt-8 ">Documents required to apply for Loan Against Property
 </h2>
 
 
@@ -90,7 +90,7 @@ const AboutLoanAgaints = () => {
 
 
     <div>
-    <h2 className="text-4xl font-bold mb-6 text-center mt-8 ">Fees and Charges for Home Loan</h2>
+    <h2 className="text-4xl font-bold mb-6 text-center text-blue-600 uppercase mt-8 ">Fees and Charges for Home Loan</h2>
     
         <img src={Homeloan} alt='' className='w-full h-full'/>
     </div>

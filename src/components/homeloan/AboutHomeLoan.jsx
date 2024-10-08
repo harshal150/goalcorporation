@@ -39,14 +39,14 @@ const AboutHomeLoan = () => {
 
        <section className="max-w-full mx-36 p-8 bg-white rounded-2xl shadow-2xl border border-gray-200 mt-10 mb-6">
   {/* Title */}
-  <h2 className="text-4xl font-bold text-center text-gray-800 mb-8">
+  <h2 className="text-4xl  text-center font-bold text-blue-600 uppercase mb-8">
     Home Loan Eligibility
   </h2>
 
-  {/* Description with Link */}
+  {/* Description with Link
   <p className="text-lg text-center text-gray-600 mb-8">
     The basic <a href="#" className="text-blue-600 hover:underline">home loan eligibility</a> criteria are as follows:
-  </p>
+  </p> */}
 
   {/* Age Section */}
   <div className="mb-6">
@@ -85,9 +85,9 @@ const AboutHomeLoan = () => {
   </div>
 </section>
 
-    <section className="max-w-full p-6 bg-gradient-to-r from-white via-[#f5f8fc] to-[#E0EAF5] text-gray-800">
+    <section className="max-w-full p-6 bg-gradient-to-r from-white via-[#d3e2f7] to-[#aac6e3] text-gray-800">
   {/* Title */}
-  <h2 className="text-4xl font-bold mb-6 text-center mt-8">Documentation for Home Loan</h2>
+  <h2 className="text-4xl mb-6 text-center font-bold text-blue-600 uppercase mt-8">Documentation for Home Loan</h2>
 
   <div className='mx-36'>
     {/* Subtitle */}
@@ -156,7 +156,7 @@ const AboutHomeLoan = () => {
 
 
     <div>
-    <h2 className="text-4xl font-bold mb-6 text-center mt-8 ">Fees and Charges for Home Loan</h2>
+    <h2 className="text-4xl mb-6 text-center font-bold text-blue-600 uppercase mt-8 ">Fees and Charges for Home Loan</h2>
     
         <img src={Homeloan} alt='' className='w-full h-full'/>
     </div>

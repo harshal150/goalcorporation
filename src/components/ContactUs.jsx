@@ -1,144 +1,186 @@
 import { useState } from "react";
-import {
-  faEnvelopeOpenText,
-  faHdd,
-  faPhoneAlt,
-} from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { motion } from "framer-motion";
 import { AddressMap } from "./CompanyMapLocation";
+import { Navbar } from "./Navbar";
+import Footer from "./Footer";
 
-const contactInfoList = [
-  {
-    icon: faEnvelopeOpenText,
-    label: "support@goalcorporation.com",
-    href: "mailto:harshhh30601@gmail.com",
-  },
-  {
-    icon: faPhoneAlt,
-    label: "+91 9881519650",
-    href: "callto:+91 9881519650",
-  },
-  {
-    icon: faHdd,
-    label: "goalcorporation.com",
-    href: "www.goalcorporation.com",
-  },
+const indianStates = [
+  "Andhra Pradesh",
+  "Arunachal Pradesh",
+  "Assam",
+  "Bihar",
+  "Chhattisgarh",
+  "Goa",
+  "Gujarat",
+  "Haryana",
+  "Himachal Pradesh",
+  "Jharkhand",
+  "Karnataka",
+  "Kerala",
+  "Madhya Pradesh",
+  "Maharashtra",
+  "Manipur",
+  "Meghalaya",
+  "Mizoram",
+  "Nagaland",
+  "Odisha",
+  "Punjab",
+  "Rajasthan",
+  "Sikkim",
+  "Tamil Nadu",
+  "Telangana",
+  "Tripura",
+  "Uttar Pradesh",
+  "Uttarakhand",
+  "West Bengal",
 ];
 
-const ContactForm = () => {
+const AboutContact = () => {
   const [validated, setValidated] = useState(false);
 
   const handleSubmit = (event) => {
     event.preventDefault();
-
     const form = event.currentTarget;
     if (form.checkValidity() === false) {
       event.preventDefault();
       event.stopPropagation();
     }
-
     setValidated(true);
   };
 
   return (
-    <form className="" noValidate validated={validated} onSubmit={handleSubmit}>
-      <div className="mb-4">
-        <input
-          type="text"
-          className="min-h-[48px] leading-[48px] bg-[#F2F6FD]  border border-transparent rounded-xl focus:outline-none focus:border focus:border-[#86b7fe] w-full px-5"
-          placeholder="Enter Name"
-        />
-      </div>
-      <div className="mb-4">
-        <input
-          type="email"
-          className="min-h-[48px] leading-[48px] bg-[#F2F6FD]  border border-transparent rounded-xl focus:outline-none focus:border focus:border-[#86b7fe] w-full px-5"
-          placeholder="Enter Email"
-        />
-      </div>
-      <div className="mb-4">
-        <textarea
-          name="message"
-          className="min-h-[48px] leading-[48px] bg-[#F2F6FD] border border-transparent rounded-xl focus:outline-none focus:border focus:border-[#86b7fe] w-full px-5"
-          placeholder="Enter Message"
-          rows="4"
-        ></textarea>
-      </div>
-      <div className="text-start">
-        <button
-          type="submit"
-          className="bg-[#3B82F6] hover:bg-opacity-90 text-white px-8 py-3 rounded mb-4"
-        >
-          Submit
-        </button>
-      </div>
-    </form>
-  );
-};
+    <div className="home-page-container" style={{ overflowX: 'hidden' }}>
+      <Navbar />
 
-const ContactFormCard = () => (
-  <div className="bg-white shadow-xl rounded-2xl p-6 md:p-12">
-    <h2 className="text-xl md:text-[35px] leading-none font-bold mb-4">
-      We’re just a message away
-    </h2>
+      <section className="container mx-2 my-10">
+        <h1 className="text-5xl font-bold text-center text-indigo-800 mb-10">
+          CONTACT US
+        </h1>
 
-    <ContactForm />
-  </div>
-);
+        {/* Note Section */}
+        <div className="max-w-6xl mx-auto bg-red-100 p-4 mb-6 rounded-md text-sm">
+          <p className="flex items-center">
+            <span className="text-yellow-600 text-lg mr-2">⚠️</span>
+            <strong>Note:</strong> We do not charge for our services to customers. If any personnel takes any charges other than bank fees, please immediately contact our toll-free number.
+          </p>
+        </div>
 
-const ContactInfo = ({ contactInfoList }) => (
-  <div className="mt-5 pt-md-4 space-y-4">
-    {contactInfoList.map((info, i) => (
-      <div
-        className="bg-gray-100 shadow max-w-[380px] mt-6 flex items-center rounded-xl p-5"
-        key={i}
-      >
-        <FontAwesomeIcon icon={info.icon} className="text-3xl px-2" />
-        <a className="text-lg font-medium ml-3" href={info.href || "#!"}>
-          {info.label}
-        </a>
-      </div>
-    ))}
-  </div>
-);
-
-const AboutContact = () => {
-  return (
-    <>
-      <section className="ezy__contact9 light py-14 md:mx-36 md:py-24 text-zinc-900 overflow-hidden">
-        <div className="container px-4">
-          <div className="flex items-center justify-center text-center mb-6 md:mb-12">
-            <div className="max-w-xl">
-              <h1 className="text-6xl font-extrabold text-center text-indigo-800 mb-10">
-                Contact Us
-              </h1>
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 max-w-6xl mx-auto">
+          {/* Left: Form */}
+          <motion.div
+            initial={{ x: "-100vw" }}
+            animate={{ x: 0 }}
+            transition={{ type: "spring", stiffness: 100, duration: 0.8 }}
+            className="space-y-6 lg:col-span-8"
+          >
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <input
+                type="text"
+                className="w-full h-12 border border-gray-300 rounded-md p-4"
+                placeholder="Name"
+              />
+              <input
+                type="email"
+                className="w-full h-12 border border-gray-300 rounded-md p-4"
+                placeholder="Email Id"
+              />
+              <input
+                type="tel"
+                className="w-full h-12 border border-gray-300 rounded-md p-4"
+                placeholder="Mobile Number"
+              />
+              <select className="w-full h-12 border border-gray-300 rounded-md text-gray-500 px-4">
+                <option value="" className="text-gray-500">
+                  Select State
+                </option>
+                {indianStates.map((state) => (
+                  <option key={state} value={state} className="text-gray-800">
+                    {state}
+                  </option>
+                ))}
+              </select>
+              <input
+                type="text"
+                className="w-full h-12 border border-gray-300 rounded-md p-4"
+                placeholder="City"
+              />
+              <select className="w-full h-12 border border-gray-300 rounded-md text-gray-500 px-4">
+                <option value="" className="text-gray-500">
+                  Reason to Connect
+                </option>
+                <option className="text-gray-800">Inquiry</option>
+                <option className="text-gray-800">Support</option>
+                <option className="text-gray-800">Feedback</option>
+              </select>
             </div>
-          </div>
+            <input
+              type="text"
+              className="w-full h-12 border border-gray-300 rounded-md p-4"
+              placeholder="Subject"
+            />
+            <textarea
+              className="w-full border border-gray-300 rounded-md p-4"
+              rows="4"
+              placeholder="Message"
+            ></textarea>
+            <button
+              type="submit"
+              className="w-full h-12 hover:bg-blue-600 bg-[#4ade80] text-white font-bold rounded-md"
+            >
+              SEND MESSAGE
+            </button>
 
-          <div className="grid grid-cols-12 gap-8">
-            <div className="col-span-12 lg:col-span-6">
-              <p className="text-md mb-8">
-                We'd love to hear from you! Whether you have a question about our
-                services, need assistance with your account, or just want to say
-                hello, we're here to help. Feel free to reach out to us using the
-                contact information provided below, and we'll get back to you as
-                soon as possible.
-              </p>
-              <ContactInfo contactInfoList={contactInfoList} />
+            {/* Contact Information */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+              <div className="text-center">
+                <p className="font-bold">WORKING HOURS</p>
+                <p>MON-SAT</p>
+                <p>10:00 AM - 07:00 PM</p>
+              </div>
+              <div className="text-center">
+                <p className="font-bold">Head Office</p>
+                <p>
+                  Goal Corporation Pvt Ltd No 250/15, Ground Floor,6th Cross,
+                  9th Main,2nd Block,
+                </p>
+                <p>Jayanagar, Bangalore - 560011, Karnataka, India</p>
+              </div>
+
+              <div className="text-center">
+                <p className="font-bold">EMAIL</p>
+                <a
+                  href="mailto:info@goalcorporation.com"
+                  className="text-blue-500 hover:text-blue-700 font-bold"
+                >
+                  info@goalcorporation.com
+                </a>
+              </div>
+              <div className="text-center">
+                <p className="font-bold">PHONE</p>
+                <a
+                  href="tel:+91 9606 96 5186"
+                  className="text-blue-500 hover:text-blue-700 font-bold"
+                >
+                  +91 9606 96 5186
+                </a>
+              </div>
             </div>
+          </motion.div>
 
-            <div className="col-span-12 lg:col-span-6">
-              <ContactFormCard />
-            </div>
-          </div>
-
-          <div className="mt-12">
-            <h2 className="text-2xl font-bold mb-4">Our Location</h2>
+          {/* Right: Address Map */}
+          <motion.div
+            initial={{ x: "100vw" }}
+            animate={{ x: 0 }}
+            transition={{ type: "spring", stiffness: 100, duration: 0.8 }}
+            className="h-full lg:col-span-4"
+          >
             <AddressMap />
-          </div>
+          </motion.div>
         </div>
       </section>
-    </>
+
+      <Footer />
+    </div>
   );
 };
 

@@ -66,10 +66,10 @@ const Header = () => {
             </span>
           ))}
         </h1>
-        <p className="mt-6 text-[10px] sm:text-base md:text-lg xl:text-lg 2xl:text-2xl uppercase font-semibold">
+        <p className="mt-6 text-[8px] sm:text-base md:text-base xl:text-base 2xl:text-2xl uppercase font-semibold">
           {description}
         </p>
-        <button className="mt-6 bg-[#4ade80] px-6 py-2 sm:px-8 sm:py-3 md:px-10 md:py-4 rounded-lg text-white font-bold hover:bg-[#2563EB] transition">
+        <button className="mt-6 bg-[#4ade80] px-6 py-2 sm:px-8 sm:py-3 md:px-6 md:py-3 rounded-lg text-white font-bold hover:bg-[#2563EB] transition">
           Learn more
         </button>
       </div>

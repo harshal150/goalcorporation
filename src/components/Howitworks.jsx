@@ -45,7 +45,7 @@ const ContentItem = ({ item, isVisible }) => (
       </h4>
       <p className="opacity-75 mb-4 text-black text-left">{item.text}</p>
     </div>
-    <button className="rounded-lg py-2 px-4 text-[15px] font-semibold bg-[#4ade80] text-white mt-4 transition duration-300 ease-in-out hover:bg-blue-600 transform hover:scale-110 shadow-md">
+    <button className="rounded-lg py-2 px-4 text-[15px] font-semibold  text-white mt-4 transition duration-300 ease-in-out hover:bg-blue-600 bg-[#4ade80] transform hover:scale-110 shadow-md">
       Learn More
     </button>
   </div>

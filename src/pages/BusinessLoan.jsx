@@ -3,6 +3,7 @@ import { Navbar } from '../components/Navbar'
 import Footer from '../components/Footer'
 import AboutBuisnessLoan from '../components/businessloan/AboutBuisnessLoan'
 import BusinessHeroSection from '../components/businessloan/BusinessHeroSection'
+import BusinessFAQ from '../components/businessloan/BuissnessFAQ'
 
 const BusinessLoan = () => {
   return (
@@ -10,6 +11,7 @@ const BusinessLoan = () => {
        <Navbar/>
        <BusinessHeroSection/>
 <AboutBuisnessLoan/>
+<BusinessFAQ/>
       <Footer/>
     </div>
   )

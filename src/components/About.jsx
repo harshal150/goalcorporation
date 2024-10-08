@@ -65,7 +65,7 @@ const About = () => {
             We Help Our Clients To Get Best Loan
           </p>
           <p className="text-gray-600 mb-6">
-            Goal Corporation, with a PAN India presence in over 1,000 cities, is a leading credit lending establishment. Founded by financial experts with 25+ years of experience, we have served over 1 million clients and successfully disbursed loans exceeding ₹1,00,000 crores through partnerships with 265+ banks and NBFCs. We are committed to helping you make smarter financial decisions with personalized solutions. Connect with us today to secure your financial future!
+            Goal Corporation, with a PAN India presence in over 100 cities, is a leading credit lending establishment. Founded by financial experts with 20+ years of experience, we have served over 32,000+ clients and successfully disbursed loans exceeding 20K crores+ through partnerships with 70+ banks and NBFCs. We are committed to helping you make smarter financial decisions with personalized solutions. Connect with us today to secure your financial future!
           </p>
           <p className="text-gray-600 mb-8">
             Connect with us to help you make your financial decisions right and smart.
@@ -88,22 +88,22 @@ const About = () => {
         <div className="lg:w-1/2 grid grid-cols-1 sm:grid-cols-2 gap-x-1 gap-y-8">
           <div className="text-center">
             <img src={bank} alt="Partner Banks" className="w-16 h-16 mx-auto mb-4"/>
-            <p className="text-2xl font-bold">100+</p>
+            <p className="text-2xl font-bold">70+</p>
             <p className="text-gray-500">Partner Banks & NBFCs</p>
           </div>
           <div className="text-center">
             <img src={map} alt="Branches" className="w-16 h-16 mx-auto mb-4"/>
-            <p className="text-2xl font-bold">1000+</p>
+            <p className="text-2xl font-bold">100+</p>
             <p className="text-gray-500">Branches Across India</p>
           </div>
           <div className="text-center">
             <img src={Payment} alt="Disbursal" className="w-16 h-16 mx-auto mb-4"/>
-            <p className="text-2xl font-bold">₹1,00,000 L+</p>
+            <p className="text-2xl font-bold">₹ 20k CR +</p>
             <p className="text-gray-500">Successful Disbursal</p>
           </div>
           <div className="text-center">
             <img src={exp} alt="Experience" className="w-16 h-16 mx-auto mb-4"/>
-            <p className="text-2xl font-bold">25+</p>
+            <p className="text-2xl font-bold">20+</p>
             <p className="text-gray-500">Years of Experience</p>
           </div>
         </div>

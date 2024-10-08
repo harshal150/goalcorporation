@@ -3,6 +3,7 @@ import PersonalHeroSection from '../components/personalloan/PersonalHeroSection'
 import { Navbar } from '../components/Navbar'
 import Footer from '../components/Footer'
 import AboutPersonalLoan from '../components/personalloan/AboutPersonalLoan'
+import PersonalFAQ from '../components/personalloan/PersonalFAQ'
 
 const PersonalLoan = () => {
   return (
@@ -10,6 +11,7 @@ const PersonalLoan = () => {
     <Navbar/>
       <PersonalHeroSection/>
       <AboutPersonalLoan/>
+      <PersonalFAQ/>
       <Footer/>
     </div>
   )

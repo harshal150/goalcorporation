@@ -159,16 +159,19 @@ export const Navbar = () => {
             <div className="relative group mt-1">
               <span className="text-[#459991] hover:text-[#459991] px-3 py-2 rounded-md text-lg font-medium flex justify-left ">
                 Loans
-                <span className="flex justify-left ">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="2em"
-                    height="2em"
-                    viewBox="0 0 24 24"
-                  >
-                    <path fill="currentColor" d="m7 10l5 5l5-5z"></path>
-                  </svg>
-                </span>
+                <span className="flex justify-left items-center">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="2em"
+      height="2em"
+      viewBox="0 0 24 24"
+      className="bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white rounded-full p-3 shadow-lg transition-all duration-300 transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+    >
+      <path fill="currentColor" d="m7 10l5 5l5-5z"></path>
+    </svg>
+
+</span>
+
               </span>
               <div className="absolute hidden group-hover:block bg-[#fff] text-black mt-0 w-48 rounded-md shadow-lg transition-all duration-200 ease-in-out">
                 <Link

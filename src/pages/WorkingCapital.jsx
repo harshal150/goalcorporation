@@ -3,6 +3,7 @@ import { Navbar } from '../components/Navbar'
 import Footer from '../components/Footer'
 import WorkingCapitalHeroSection from '../components/workingcapital/WorkingCapitalHeroSection'
 import AboutWorkingCapital from '../components/workingcapital/AboutWorkingCapital'
+import WorkCapFAQ from '../components/workingcapital/WorkCapFAQ'
 
 const WorkingCapital = () => {
   return (
@@ -11,6 +12,7 @@ const WorkingCapital = () => {
 
 <WorkingCapitalHeroSection/>
 <AboutWorkingCapital/>
+<WorkCapFAQ/>
 <Footer/>
     </div>
   )
