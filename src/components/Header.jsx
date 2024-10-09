@@ -30,7 +30,7 @@ const Header = () => {
     },
     {
       image: one,
-      title: "One Stop Solution for All Kinds",
+      title: "One Stop Solution for All Kinds of Loans",
       description:
         "Access a comprehensive range of financial services, from loans to investment advice, all tailored to meet diverse business and personal needs under one roof.",
     },
