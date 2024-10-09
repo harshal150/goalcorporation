@@ -14,11 +14,7 @@ const HeroSection = () => {
     <div className="bg-gradient-to-b from-blue-50 to-blue-100 h-[75vh] lg:h-[100vh] md:h-[75vh] flex flex-col justify-between lg:flex-row items-center px-5 sm:px-10 lg:px-28">
       {/* Text Section */}
       <div className="max-w-xl text-center lg:text-left mt-10 lg:mt-0 lg:mr-2">
-        {/* <h1 className="text-2xl sm:text-3xl md:text-3xl lg:text-[45px] leading-3 font-bold text-blue-500 capitalize">
-          Make Your Homeownership
-          Dreams Come True with Our{' '}
-          <span className="text-red-500">Home Loan Solution!</span>
-        </h1> */}
+
 
         <h1 className="text-2xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-blue-500">
         Make Your Homeownership

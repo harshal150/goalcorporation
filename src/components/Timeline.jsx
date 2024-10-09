@@ -108,7 +108,7 @@ const Timeline = () => {
       </h1>
       <div className="relative flex justify-center items-start mt-14">
         {/* Timeline container */}
-        <div className="flex justify-between align-middle items-center w-full max-w-7xl space-x-16">
+        <div className="flex justify-between align-middle items-center w-full max-w-7xl space-x-2">
           {timelineData.map((item, index) => (
             <div
               key={index}

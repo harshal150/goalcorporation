@@ -11,7 +11,7 @@ import {
 
 const PartnerSection = () => {
   return (
-    <section className="container mx-auto my-10 px-4  bg-gradient-to-r from-white via-[#d3e2f7] to-[#aac6e3] py-6 h-screen mt-10">
+    <section className="container mx-auto my-10 px-4  bg-gradient-to-r from-white via-[#d3e2f7] to-[#aac6e3] py-6 h-[110%] mt-10">
       {/* Title Section */}
       <h1 className="text-4xl font-bold text-center text-blue-700 capitalize mb-6">
         Who can Become a Partner with Goal Corporation?

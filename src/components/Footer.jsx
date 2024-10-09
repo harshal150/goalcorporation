@@ -9,6 +9,7 @@ import {
   faPinterest,
   faWordpress,
 } from "@fortawesome/free-brands-svg-icons";
+import logo from '../assets/Goal logo orange.png'
 
 const quickLinks = [
   { value: "Company Profile", href: "#!" },
@@ -41,8 +42,10 @@ const jobInfo = [
 const equipment = [
   { value: "Home Loan", href: "#!" },
   { value: "Loan Against Property", href: "#!" },
+  { value: "Working Capital Loan", href: "#!" },
   { value: "Business Loan", href: "#!" },
   { value: "Personal Loan", href: "#!" },
+  { value: "Debt Restructuring", href: "#!" },
 ];
 
 const language = [
@@ -172,7 +175,7 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row md:justify-between text-center md:text-left">
           <div className="mb-6 md:mb-0">
-            <img src="/assets/final-logo.png" height="50" alt="Logo" />
+            <img src={logo} height="50" alt="Logo" />
           </div>
           <div className="flex flex-col md:flex-row md:w-3/4 justify-between ">
             <div className="mb-6 md:mb-0">

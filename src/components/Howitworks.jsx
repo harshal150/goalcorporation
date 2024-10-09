@@ -30,7 +30,7 @@ const contents = [
 
 const ContentItem = ({ item, isVisible }) => (
   <div
-    className={`flex flex-col h-[100%] p-8 md:p-10 bg-white shadow-lg rounded-xl transition transform duration-500 ease-out w-[300px] border border-gray-200 relative overflow-hidden ${
+    className={`flex flex-col h-[93%] p-8 md:p-10 bg-white shadow-lg rounded-xl transition transform duration-500 ease-out w-[290px] border border-gray-200 relative overflow-hidden ${
       isVisible ? "translate-x-0 opacity-100" : "translate-x-full opacity-0"
     } hover:scale-105 hover:shadow-2xl`}
   >
@@ -38,16 +38,16 @@ const ContentItem = ({ item, isVisible }) => (
       <img
         src={item.image}
         alt={item.title}
-        className="w-28 h-28 mx-auto rounded-full border border-gray-300"
+        className="w-24 h-24 mx-auto rounded-full border border-gray-300"
       />
       <h4 className="my-4 font-extrabold text-2xl text-left text-[#2563EB] leading-tight">
         {item.title}
       </h4>
       <p className="opacity-75 mb-4 text-black text-left">{item.text}</p>
     </div>
-    <button className="rounded-lg py-2 px-4 text-[15px] font-semibold  text-white mt-4 transition duration-300 ease-in-out hover:bg-blue-600 bg-[#4ade80] transform hover:scale-110 shadow-md">
+    {/* <button className="rounded-lg py-2 px-4 text-[15px] font-semibold  text-white mt-4 transition duration-300 ease-in-out hover:bg-blue-600 bg-[#4ade80] transform hover:scale-110 shadow-md">
       Learn More
-    </button>
+    </button> */}
   </div>
 );
 

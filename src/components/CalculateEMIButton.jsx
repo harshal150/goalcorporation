@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import LoanCalculator from './LoanCalculator'; // Assuming you want to show this component
+import LoanCalculator from './LoanCalculator';
+import LoLoanCalculator from './NewCalculator'; // Assuming you want to show this component
 
 const CalculateEMIButton = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
@@ -33,7 +34,7 @@ const CalculateEMIButton = () => {
             ✕
           </button>
           <div className="p-4">
-            <LoanCalculator />
+            <LoLoanCalculator />
           </div>
         </div>
       )}

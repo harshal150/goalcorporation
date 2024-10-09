@@ -36,11 +36,11 @@ const DirectorMsg = () => {
         isVisible ? "translate-y-0 opacity-100" : "translate-y-full opacity-0"
       }`}
     >
-      <h1 className="text-4xl font-bold text-center text-indigo-800 mb-10">DIRECTOR'S MESSAGE</h1>
+      <h1 className="text-4xl font-bold text-center text-indigo-800 mb-5">DIRECTOR'S MESSAGE</h1>
 
       <div className="max-w-full mx-14 flex flex-col md:flex-row items-center md:items-start shadow-lg rounded-lg p-8">
         {/* Image Section */}
-        <div className="md:w-1/3 w-full flex justify-center md:justify-center mb-6 md:mb-0">
+        <div className="md:w-1/3 w-full flex justify-center md:justify-center mb-3 md:mb-0">
           <img
             className="w-48 h-60 rounded-md shadow-md"
             src={logo} // Replace with the actual image source
@@ -50,13 +50,20 @@ const DirectorMsg = () => {
 
         {/* Text Section */}
         <div className="md:w-2/3 w-full md:pl-2">
-          <p className="text-gray-600 text-lg leading-relaxed mb-4">
-            Dear Visitor,
-            <br />
-            We at Goal Corporation have entered a new and very exciting phase in our journey... one of taking Goal Corporation global. We have set ambitious goals for ourselves - of being a well-known brand in most countries. We are fortunate to have young, dynamic professionals, partnering with us to achieve this.
-            <br />
-            <br />
-            We have always believed in quality - be it in our work, our service or our products. Each one embodies our underlying ethos: that no task is too small and that God is in the details. We realize that in today's scenario, when people are being bombarded with information and products, we need to stand out. It is through our belief in the quality and efficacy of our product that we stand confident and poised to take on the world!
+          <p className="text-gray-600 text-md leading-relaxed mb-4">
+          Dear Patron,<br></br>
+
+With a vast experience in the field of Financial Consulting we started this journey in 2005 and today we are able to reach all needy clienteles.  We provide Financial Consulting, Borrowing, Financial restructuring and helping them get a hassle-free service.  We have set ambitious goals for ourselves - being a well-known brand Pan India. We are fortunate to have a young and dynamic team supported by seasoned professionals partnering with us to achieve this.
+<br></br><br></br>
+We have always believed in quality - be it in our work, our service or our products. Each one embodies our underlying ethos, that no task is too small and we try accomplish each one of them. We realize that in today's scenario, when people are being flooded with information and products, we need to stand out and deliver quality services to them.
+<br></br><br></br>
+Nothing is achieved without able and willing partners, who are like-minded in their approach to our business. It is important to us to have a personal equation and a mutually beneficial working relationship with all our partners and customers.
+<br></br>
+We would also like to give back to the society, as much we can and as often through our CSR initiatives.
+<br></br>
+Sincerely,
+
+
           </p>
 
           {/* Name and Designation */}

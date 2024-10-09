@@ -33,13 +33,29 @@ const AboutInfo = () => {
             <h1 className="text-5xl font-bold text-left text-indigo-800 mb-10">
               About <span className="text-indigo-600">Goal Corporation</span>
             </h1>
-            <p className="text-gray-600 text-lg leading-relaxed">
-              Goal Corporation established in 2005 which has one decade of experience. located in garden city Bangalore, India. To support corporate and individuals by providing them total business solutions & has been synonymous with Excellence, Quality, Integrity, Environmental consciousness, and pioneering spirit. With Financial Consultancy, Medical Equipments, and Real Estate.
-            </p>
+            <p className="text-gray-600 text-md leading-relaxed">
+            Our core focus is into Financial Consulting, Real Estate, Bio Medical, Construction & Infrastructure Development and we are also into an ICSE syllabi International Public School. We believe in delivering Quality Service and achieve customer’s utmost satisfaction. The real strength of Goal Corporation is its young and professional team, competent management and hardcore exposure in the field.  </p>
+<p className="text-gray-600 text-md leading-relaxed" ></p><br></br>
+<p className="text-gray-600 text-md leading-relaxed" >Goal Corporation Private Limited is an unique one-stop service provider for all your Loans  including Home Loans, Personal Loans,  Business Loans, Balance Transfers and more. With 70+ empanelled Banks & NBFCs, we will surely help you in getting the BEST LOAN suiting your requirement. 
+</p><br></br>
+<p className="text-gray-600 text-md leading-relaxed" >With 30+ branches and location partners, we serve the needs of people from every strata of society, be it a personal loan of 10 lakh rupees or the debt restructuring of Rs. 100 Crore+.
+</p>
+<br></br>
+
+
+<p className="text-gray-600 text-md leading-relaxed">
+
+<strong>GOAL for us is :</strong> <br></br><br></br>
+<strong>G </strong>-Gratitude for our customers, stakeholders and team members.<br></br>
+<strong>O </strong>- Opportunity for us to serve our customers, thereby achieve growth for ourselves.<br></br>
+<strong>A </strong>- Analytics: As a Fintech company we use analytic tools to help our customers to get loans with just single click.<br></br>
+<strong>L </strong>- Lending: We intend to be the most preferred, transparent, honest and most loved financial service provider.<br></br>
+
+Trust us, we are Committed To Deliver!!!
+           
+</p>
             <br />
-            <p className="text-gray-700 text-lg leading-relaxed">
-              We have professional and experienced personnel in all our departments. Efficient management, a skilled team, state-of-the-art infrastructure, and standardized processes are the real strengths of Goal Corporation for meeting complete customer satisfaction. Purity, Wide Range, Innovations, Hard work & Customer satisfaction are the secrets of the success of Goal Corporation.
-            </p>
+       
           </div>
         </div>
       </div>

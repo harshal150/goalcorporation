@@ -3,18 +3,18 @@ import member1 from '../../assets/DirectorImage.jpg';
 const teamMembers = [
   {
     img: member1,
-    name: "Thrapthi",
-    designation: "Founder / CEO",
+    name: "Thrapthi Nayak ",
+    designation: "Director",
   },
   {
     img: member1,
-    name: "Basavaraj",
-    designation: "Founder / COO",
+    name: "Basavaraj N",
+    designation: "Director",
   },
   {
     img: member1,
-    name: "Shriram",
-    designation: "Graphics Designer / Video Editor",
+    name: "CA Sriram Reddy",
+    designation: "Director",
   },
 ];
 

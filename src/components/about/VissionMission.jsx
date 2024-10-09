@@ -23,18 +23,17 @@ const VisionMission = () => {
             <img
               src={mission} // Replace with your vision image URL
               alt="Our Vision"
-              className="rounded-xl shadow-lg object-cover w-64 h-64"
+              className="rounded-xl shadow-lg object-cover w-64 h-48"
             />
           </div>
           {/* Vision Content */}
           <div className="w-2/3 pl-6 border-l-4 border-indigo-600">
             <h2 className="text-4xl font-semibold text-indigo-700 mb-4">Our Vision</h2>
             <p className="text-gray-700 text-lg leading-relaxed mb-6">
-              Our vision guides every aspect of our business. We strive for innovation, creating a roadmap for sustainable growth while focusing on customer satisfaction and positive impact.
-            </p>
-            <p className="text-gray-700 text-lg leading-relaxed">
+            To create an easy Access to Financial products by collaborating between financial intermediaries and customers through technology and digital platforms.            </p>
+            {/* <p className="text-gray-700 text-lg leading-relaxed">
               We aim to refresh the world, inspire optimism and happiness, create value, and make a meaningful difference in the lives of those we serve.
-            </p>
+            </p> */}
           </div>
         </div>
       </div>
@@ -47,18 +46,18 @@ const VisionMission = () => {
             <img
               src={vission}
               alt="Our Mission"
-              className="rounded-xl shadow-lg object-cover  w-64 h-64"
+              className="rounded-xl shadow-lg object-cover  w-64 h-48"
             />
           </div>
           {/* Mission Content */}
           <div className="w-2/3 pl-6 border-l-4 border-indigo-600">
             <h2 className="text-4xl font-semibold text-indigo-700 mb-4">Our Mission</h2>
             <p className="text-gray-700 text-lg leading-relaxed mb-6">
-              Goal Corporation's pursuit of quality is embedded in our people, products, and services. We aim to deliver an unparalleled experience to all of our constituents—customers, employees, vendors, and end-users.
-            </p>
-            <p className="text-gray-700 text-lg leading-relaxed">
+            To be a leader in Financial Consulting arena by increasing the market share through Pan India presence and enhance our disbursal capability. Touchbase every aspect of funding opportunities and explore newer market globally.
+</p>
+            {/* <p className="text-gray-700 text-lg leading-relaxed">
               Our commitment to quality will continue to be our brand's greatest strength, allowing us to thrive in an ever-changing world. We focus on innovation and preparing for the future.
-            </p>
+            </p> */}
           </div>
         </div>
       </div>

@@ -135,7 +135,7 @@ const Message = () => {
 		}
 	};
 	return (
-		<section className="ezy__testimonial20 light py-14 md:py-24 bg-white dark:bg-[#F9F6F1] text-zinc-900 dark:text-white flex justify-center">
+		<section className="ezy__testimonial20 light py-14 p-10 md:py-24 bg-white dark:bg-[#F9F6F1] text-zinc-900 dark:text-white flex justify-center">
 			<div className="container relative">
 				<div className="flex justify-between mb-md-4">
 					<div className="w-2/3 lg:max-w-lg">

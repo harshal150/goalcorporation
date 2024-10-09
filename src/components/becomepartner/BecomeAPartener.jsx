@@ -90,7 +90,7 @@ const BecomeAPartner = () => {
   return (
     <section
       ref={sectionRef}
-      className={`container mx-auto my-10 ${
+      className={`container mx-auto p-8 my-10 ${
         isVisible ? "animate__animated animate__bounceIn" : ""
       }`}
     >

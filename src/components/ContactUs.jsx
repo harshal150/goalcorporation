@@ -135,7 +135,7 @@ const AboutContact = () => {
               <div className="text-center">
                 <p className="font-bold">WORKING HOURS</p>
                 <p>MON-SAT</p>
-                <p>10:00 AM - 07:00 PM</p>
+                <p>09:30 AM - 06:30 PM</p>
               </div>
               <div className="text-center">
                 <p className="font-bold">Head Office</p>

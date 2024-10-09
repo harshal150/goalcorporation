@@ -245,13 +245,13 @@ const ContentItem = ({ item }) => {
   };
 
   return (
-    <div className="bg-white  rounded-lg p-6 transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-xl hover:border-2 w-full h-[320px] flex flex-col items-start relative mb-3">
+    <div className="bg-white  rounded-lg p-6 transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-xl hover:border-2 w-full h-[400px] flex flex-col items-start relative mb-3">
       <img
         src={item.image}
         alt={item.title}
-        className="absolute top-4 right-4 w-16 h-16 ml-4 rounded-full object-cover border-2 border-white "
+        className="absolute top-4 right-4 w-14 h-14 ml-4 rounded-full object-cover border-2 border-white "
       />
-      <h3 className="text-3xl font-extrabold text-blue-600 mb-9 pr-5">
+      <h3 className="text-3xl font-extrabold text-blue-600 text-left mb-9 pr-5">
         <Link to="/homeloan">{item.title}</Link>
       </h3>
       <p className="text-gray-700 text-base leading-6 text-start font-semibold">

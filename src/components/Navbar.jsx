@@ -91,10 +91,16 @@ export const Navbar = () => {
                   Home Loans
                 </Link>
                 <Link
-                  to="/personalloan"
-                  className="block px-4 py-3 text-sm font-semibold hover:bg-black hover:text-white transition duration-150 rounded-2xl mx-1.5"
+                  to="/loanagaints"
+                  className="block px-4 py-3 text-sm font-semibold hover:bg-black hover:text-white transition duration-150 rounded-2xl mx-1.5 mt-1"
                 >
-                  Personal Loans
+                  Loan Against Property
+                </Link>
+                <Link
+                  to="/workingcapital"
+                  className="block px-4 py-3 text-sm font-semibold hover:bg-black hover:text-white transition duration-150 rounded-2xl mx-1.5 mt-1"
+                >
+                  Working Capital Loan
                 </Link>
                 <a
                   href="/businessloan"
@@ -103,23 +109,20 @@ export const Navbar = () => {
                   Business Loans
                 </a>
                 <Link
-                  to="/workingcapital"
-                  className="block px-4 py-3 text-sm font-semibold hover:bg-black hover:text-white transition duration-150 rounded-2xl mx-1.5 mt-1"
+                  to="/personalloan"
+                  className="block px-4 py-3 text-sm font-semibold hover:bg-black hover:text-white transition duration-150 rounded-2xl mx-1.5"
                 >
-                  Working Capital Loan
+                  Personal Loans
                 </Link>
+       
+       
                 <Link
                   to="/debtrestructure"
                   className="block px-4 py-3 text-sm font-semibold hover:bg-black hover:text-white transition duration-150 rounded-2xl mx-1.5 mt-1"
                 >
                   Debt Restructuring
                 </Link>
-                <Link
-                  to="/loanagaints"
-                  className="block px-4 py-3 text-sm font-semibold hover:bg-black hover:text-white transition duration-150 rounded-2xl mx-1.5 mt-1"
-                >
-                  Loan Against Property
-                </Link>
+        
               </div>
             </div>
 

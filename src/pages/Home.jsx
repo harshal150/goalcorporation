@@ -13,6 +13,7 @@ import About from '../components/About'
 import MapComponent from '../components/MapComponent'
 import ApplyForLoan from '../components/ApplyForLoan'
 import Header from '../components/Header'
+import LoLoanCalculator from '../components/NewCalculator'
 
 export const Home = () => {
   return (
@@ -24,7 +25,8 @@ export const Home = () => {
         <ApplyForLoan />
         <Services />
         <Howitworks />
-        <LoanCalculator />
+        {/* <LoanCalculator /> */}
+      <LoLoanCalculator/>
         <About />
         <Timeline />
         <MapComponent />
