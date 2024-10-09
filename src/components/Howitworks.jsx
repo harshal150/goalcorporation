@@ -30,7 +30,7 @@ const contents = [
 
 const ContentItem = ({ item, isVisible }) => (
   <div
-    className={`flex flex-col h-[100%] p-8 md:p-10 bg-white shadow-lg rounded-xl transition transform duration-500 ease-out w-[350px] border border-gray-200 relative overflow-hidden ${
+    className={`flex flex-col h-[100%] p-8 md:p-10 bg-white shadow-lg rounded-xl transition transform duration-500 ease-out w-[300px] border border-gray-200 relative overflow-hidden ${
       isVisible ? "translate-x-0 opacity-100" : "translate-x-full opacity-0"
     } hover:scale-105 hover:shadow-2xl`}
   >
