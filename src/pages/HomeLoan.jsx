@@ -15,7 +15,7 @@ const HomeLoan = () => {
 
       <HeroSection/>
       <AboutHomeLoan/>
-      <Table/>
+      {/* <Table/> */}
       <HomeFAQ/>
       <TestimonialSlider/>
       <Footer/>
