@@ -9,7 +9,7 @@ const AboutBuisnessLoan = () => {
   return (
     <div>
     <CalculateEMIButton/>
-           <h1 className='text-[60px] font-extrabold text-blue-600 text-center mt-12'>Business Loans</h1>
+           <h1 className='text-[50px] font-extrabold text-blue-600 text-center mt-12'>Business Loans</h1>
 
            <section className="max-w-full mx-16 p-8 bg-white text-gray-800">
   <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

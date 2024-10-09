@@ -81,7 +81,7 @@ FaqItem.propTypes = {
 
 const PersonalFAQ = () => {
 	return (
-		<section className="ezy__faq1 light py-14 md:py-24 bg-white dark:bg-[#0b1727] text-zinc-900 dark:text-white">
+		<section className="ezy__faq1 light py-14 md:py-24  dark:bg-[#0b1727] text-zinc-900 bg-gradient-to-r from-white via-[#d3e2f7] to-[#aac6e3] text-gray-800 ">
 			<div className="container px-16 md:px-8 lg:px-28">
 				<div className="grid grid-cols-12 justify-center md:mb-6">
 					<div className="col-span-12 lg:col-span-8 lg:col-start-3 xl:px-12 text-center">

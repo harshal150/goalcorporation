@@ -16,7 +16,7 @@ const AboutPersonalLoan = () => {
        With Goal Corporation, you can now avail an instant personal loan online, making the entire process quick and convenient. Whether you're planning a trip to your dream destination, renovating your home with modern furnishings, organising your dream wedding, or facing a medical emergency, an online Personal Loan from Rupee Boss will always be there to help you fulfill your requirements with the lowest personal loan interest rate
 
        </p> */}
-       <h1 className='text-[60px] font-extrabold text-blue-600 text-center mt-12'>Personal Loans</h1>
+       <h1 className='text-[50px] font-extrabold text-blue-600 text-center mt-12'>Personal Loans</h1>
        <div className="relative mx-36">
       {/* Text with Icon */}
       <div className="flex items-start">

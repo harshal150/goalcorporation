@@ -13,7 +13,7 @@ const AboutWorkingCapital = () => {
 
 
 
-       <h1 className='text-[60px] font-extrabold text-blue-600 text-center mt-12'>Working Capital Loan </h1>
+       <h1 className='text-[50px] font-extrabold text-blue-600 text-center mt-12'>Working Capital Loan </h1>
        <div className="relative mx-36">
       {/* Text with Icon */}
       <div className="flex items-start">

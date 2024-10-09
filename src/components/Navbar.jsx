@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import logo from '../assets/Goal logo blue.png'
+import logo2 from '../assets/Goal logo orange.png'
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,9 +16,9 @@ export const Navbar = () => {
           <div className="flex-shrink-0">
             <a href="./" className="text-black font-bold text-xl">
               <img
-                src="/assets/final-logo.png"
+                src={logo2}
                 alt="logo"
-                className="block" // Ensure visibility
+                className="block" 
               />
             </a>
           </div>

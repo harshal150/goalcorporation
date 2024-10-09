@@ -11,7 +11,7 @@ const AboutLoanAgaints = () => {
     <div>
 <CalculateEMIButton/>
 
-       <h1 className='text-[60px] font-extrabold text-blue-600 text-center mt-12'>Loan Against Property</h1>
+       <h1 className='text-[50px] font-extrabold text-blue-600 text-center mt-12'>Loan Against Property</h1>
        <div className="relative mx-36">
       {/* Text with Icon */}
       <div className="flex items-start">

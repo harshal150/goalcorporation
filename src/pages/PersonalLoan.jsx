@@ -4,6 +4,7 @@ import { Navbar } from '../components/Navbar'
 import Footer from '../components/Footer'
 import AboutPersonalLoan from '../components/personalloan/AboutPersonalLoan'
 import PersonalFAQ from '../components/personalloan/PersonalFAQ'
+import TestimonialSlider from '../components/homeloan/TestimonialSlider'
 
 const PersonalLoan = () => {
   return (
@@ -12,6 +13,7 @@ const PersonalLoan = () => {
       <PersonalHeroSection/>
       <AboutPersonalLoan/>
       <PersonalFAQ/>
+      <TestimonialSlider/>
       <Footer/>
     </div>
   )

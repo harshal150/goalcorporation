@@ -3,6 +3,8 @@ import { Doughnut } from 'react-chartjs-2';
 import { AiOutlineDollarCircle } from 'react-icons/ai';
 import { FaRegCalendarAlt } from 'react-icons/fa';
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
+import { BiRupee } from 'react-icons/bi'; // Import the Rupee icon
+
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
@@ -108,7 +110,9 @@ const LoanCalculator = () => {
           >
             {/* Loan Amount */}
             <label className="block text-lg font-semibold text-gray-900 mb-3 flex items-center">
-              <AiOutlineDollarCircle className="mr-2 text-sky-600" /> Loan Amount (₹)
+              {/* <AiOutlineDollarCircle className="mr-2 text-sky-600" /> Loan Amount (₹) */}
+              Loan Amount (₹)
+
             </label>
             <div className="flex items-center space-x-3">
               <input
@@ -131,10 +135,10 @@ const LoanCalculator = () => {
               />
             </div>
             <div className="flex justify-between text-gray-500 mt-2">
-              <span>₹50,000</span>
-              <span className="font-bold text-base">₹{loanAmount.toLocaleString('en-IN')}</span>
-              <span>₹5,00,00,000</span>
-            </div>
+  <span></span> {/* You can leave this empty if you don't need anything on the left */}
+  <span className="font-bold text-base">₹{loanAmount.toLocaleString('en-IN')}</span>
+</div>
+
 
 
                         {/* Interest Rate */}
@@ -144,7 +148,7 @@ const LoanCalculator = () => {
             <div className="flex items-center space-x-3">
               <input
                 type="number"
-                min="7"
+                min="5"
                 max="48"
                 step="0.1"
                 value={interestRate}
@@ -153,7 +157,7 @@ const LoanCalculator = () => {
               />
               <input
                 type="range"
-                min="7"
+                min="5"
                 max="48"
                 step="0.1"
                 value={interestRate}
@@ -161,11 +165,11 @@ const LoanCalculator = () => {
                 className="w-full h-2 bg-sky-500 rounded-full cursor-pointer"
               />
             </div>
-            <div className="flex justify-between text-gray-500 mt-2">
+            {/* <div className="flex justify-between text-gray-500 mt-2">
               <span>7%</span>
               <span className="font-bold text-base">{interestRate}%</span>
               <span>48%</span>
-            </div>
+            </div> */}
 
             {/* Loan Duration */}
             <label className="block text-lg font-semibold text-gray-900 mt-6 mb-3 flex items-center">

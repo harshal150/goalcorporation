@@ -34,7 +34,7 @@ const Partners = () => {
 
   return (
     <div className="bg-[#E0F7FA] py-20"> {/* Bluish faint background */}
-    <h2 className="text-center text-5xl font-bold mb-10 uppercase text-blue-700 ">Our Partners</h2>
+    <h2 className="text-center text-4xl font-bold mb-10 uppercase text-blue-700 ">Our Partners</h2>
     <div
       className="overflow-hidden relative w-full"
       onMouseEnter={() => setIsHovered(true)}

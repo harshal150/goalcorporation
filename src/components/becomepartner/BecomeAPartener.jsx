@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import "animate.css"; // Import Animate.css
+import partner from '../../assets/becomepartner.jpg'
 
 const indianStates = [
   "Andhra Pradesh",
@@ -97,91 +98,103 @@ const BecomeAPartner = () => {
         We are committed to becoming India’s Leading Loan Distributor!
       </h1>
 
-      <form
-        className="space-y-6 max-w-5xl mx-auto"
-        noValidate
-        validated={validated}
-        onSubmit={handleSubmit}
-      >
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <input
-            type="text"
-            className="w-full h-12 border border-gray-300 rounded-lg px-4 text-gray-800"
-            placeholder="First Name"
-          />
-          <input
-            type="text"
-            className="w-full h-12 border border-gray-300 rounded-lg px-4 text-gray-800"
-            placeholder="Middle Name"
-          />
-          <input
-            type="text"
-            className="w-full h-12 border border-gray-300 rounded-lg px-4 text-gray-800"
-            placeholder="Last Name"
-          />
-          <input
-            type="tel"
-            className="w-full h-12 border border-gray-300 rounded-lg px-4 text-gray-800"
-            placeholder="Mobile Number"
-          />
-          <input
-            type="text"
-            className="w-full h-12 border border-gray-300 rounded-lg px-4 text-gray-800"
-            placeholder="Pan Number"
-          />
-          <input
-            type="email"
-            className="w-full h-12 border border-gray-300 rounded-lg px-4 text-gray-800"
-            placeholder="Email"
-          />
-          <select className="w-full h-12 border border-gray-300 rounded-lg px-4 text-gray-500">
-            <option value="">Select Profession</option>
-            {professions.map((profession) => (
-              <option key={profession} value={profession}>
-                {profession}
-              </option>
-            ))}
-          </select>
-          <select className="w-full h-12 border border-gray-300 rounded-lg px-4 text-gray-500">
-            <option value="">Select State</option>
-            {indianStates.map((state) => (
-              <option key={state} value={state}>
-                {state}
-              </option>
-            ))}
-          </select>
-          <input
-            type="text"
-            className="w-full h-12 border border-gray-300 rounded-lg px-4 text-gray-800"
-            placeholder="City Name"
-          />
-        </div>
-
-        <div className="flex items-center mt-4">
-          <input
-            id="agree"
-            type="checkbox"
-            className="h-4 w-4 border border-gray-300 rounded mr-2"
-          />
-          <label htmlFor="agree" className="text-sm text-gray-600">
-            I agree to the{" "}
-            <a href="#" className="text-blue-600 underline">
-              terms & conditions
-            </a>{" "}
-            and{" "}
-            <a href="#" className="text-blue-600 underline">
-              privacy policy
-            </a>.
-          </label>
-        </div>
-
-        <button
-          type="submit"
-          className="w-full h-12 hover:bg-blue-600 bg-[#4ade80] text-white font-bold rounded-lg transition-all duration-300"
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {/* Form Section (2/3 width) */}
+        <form
+          className="space-y-6 col-span-2 "
+          noValidate
+          validated={validated}
+          onSubmit={handleSubmit}
         >
-          SUBMIT
-        </button>
-      </form>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <input
+              type="text"
+              className="w-full h-12 border border-gray-300 rounded-lg px-4 text-gray-800"
+              placeholder="First Name"
+            />
+            <input
+              type="text"
+              className="w-full h-12 border border-gray-300 rounded-lg px-4 text-gray-800"
+              placeholder="Middle Name"
+            />
+            <input
+              type="text"
+              className="w-full h-12 border border-gray-300 rounded-lg px-4 text-gray-800"
+              placeholder="Last Name"
+            />
+            <input
+              type="tel"
+              className="w-full h-12 border border-gray-300 rounded-lg px-4 text-gray-800"
+              placeholder="Mobile Number"
+            />
+            <input
+              type="text"
+              className="w-full h-12 border border-gray-300 rounded-lg px-4 text-gray-800"
+              placeholder="Pan Number"
+            />
+            <input
+              type="email"
+              className="w-full h-12 border border-gray-300 rounded-lg px-4 text-gray-800"
+              placeholder="Email"
+            />
+            <select className="w-full h-12 border border-gray-300 rounded-lg px-4 text-gray-500">
+              <option value="">Select Profession</option>
+              {professions.map((profession) => (
+                <option key={profession} value={profession}>
+                  {profession}
+                </option>
+              ))}
+            </select>
+            <select className="w-full h-12 border border-gray-300 rounded-lg px-4 text-gray-500">
+              <option value="">Select State</option>
+              {indianStates.map((state) => (
+                <option key={state} value={state}>
+                  {state}
+                </option>
+              ))}
+            </select>
+            <input
+              type="text"
+              className="w-full h-12 border border-gray-300 rounded-lg px-4 text-gray-800"
+              placeholder="City Name"
+            />
+          </div>
+
+          <div className="flex items-center mt-4">
+            <input
+              id="agree"
+              type="checkbox"
+              className="h-4 w-4 border border-gray-300 rounded mr-2"
+            />
+            <label htmlFor="agree" className="text-sm text-gray-600">
+              I agree to the{" "}
+              <a href="#" className="text-blue-600 underline">
+                terms & conditions
+              </a>{" "}
+              and{" "}
+              <a href="#" className="text-blue-600 underline">
+                privacy policy
+              </a>.
+            </label>
+          </div>
+
+          <button
+            type="submit"
+            className="w-full h-12 hover:bg-blue-600 bg-[#4ade80] text-white font-bold rounded-lg transition-all duration-300"
+          >
+            SUBMIT
+          </button>
+        </form>
+
+        {/* Image Section (1/3 width) */}
+        <div className="col-span-1">
+          <img
+            src={partner}
+            alt="Partner Banner"
+            className="w-full h-full object-cover rounded-lg"
+          />
+        </div>
+      </div>
     </section>
   );
 };

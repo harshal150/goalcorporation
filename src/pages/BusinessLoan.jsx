@@ -4,6 +4,7 @@ import Footer from '../components/Footer'
 import AboutBuisnessLoan from '../components/businessloan/AboutBuisnessLoan'
 import BusinessHeroSection from '../components/businessloan/BusinessHeroSection'
 import BusinessFAQ from '../components/businessloan/BuissnessFAQ'
+import TestimonialSlider from '../components/homeloan/TestimonialSlider'
 
 const BusinessLoan = () => {
   return (
@@ -12,6 +13,7 @@ const BusinessLoan = () => {
        <BusinessHeroSection/>
 <AboutBuisnessLoan/>
 <BusinessFAQ/>
+<TestimonialSlider/>
       <Footer/>
     </div>
   )

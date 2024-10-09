@@ -5,6 +5,7 @@ import Footer from '../components/Footer'
 import AboutHomeLoan from '../components/homeloan/AboutHomeLoan'
 import TestimonialSlider from '../components/homeloan/TestimonialSlider'
 import HomeFAQ from '../components/homeloan/HomeFAQ'
+import Table from '../components/Table'
 
 
 const HomeLoan = () => {
@@ -14,8 +15,9 @@ const HomeLoan = () => {
 
       <HeroSection/>
       <AboutHomeLoan/>
+      <Table/>
       <HomeFAQ/>
-      {/* <TestimonialSlider/> */}
+      <TestimonialSlider/>
       <Footer/>
     </div>
   )

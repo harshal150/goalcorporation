@@ -3,7 +3,7 @@ import logo from '../../assets/DirectorImage.jpg';
 
 const DirectorMsg = () => {
   const [isVisible, setIsVisible] = useState(false);
-  const elementRef = useRef(null); // Create a ref to track the component
+  const elementRef = useRef(null); // Create a ref to track the outer container
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -30,15 +30,15 @@ const DirectorMsg = () => {
   }, []);
 
   return (
-    <div className="bg-gray-50 py-16 px-4">
+    <div
+      ref={elementRef} // Attach the ref to the outer container
+      className={`bg-gray-50 py-16 px-4 transform transition-all duration-1000 ease-out ${
+        isVisible ? "translate-y-0 opacity-100" : "translate-y-full opacity-0"
+      }`}
+    >
       <h1 className="text-4xl font-bold text-center text-indigo-800 mb-10">DIRECTOR'S MESSAGE</h1>
 
-      <div
-        ref={elementRef} // Attach the ref to the div to observe it
-        className={`max-w-full mx-14 flex flex-col md:flex-row items-center md:items-start shadow-lg rounded-lg p-8 transform transition-all duration-1000 ease-out ${
-          isVisible ? "translate-y-0 opacity-100" : "translate-y-full opacity-0"
-        }`}
-      >
+      <div className="max-w-full mx-14 flex flex-col md:flex-row items-center md:items-start shadow-lg rounded-lg p-8">
         {/* Image Section */}
         <div className="md:w-1/3 w-full flex justify-center md:justify-center mb-6 md:mb-0">
           <img

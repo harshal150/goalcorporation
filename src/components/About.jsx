@@ -3,10 +3,16 @@ import bank from '../assets/about/banking.png';
 import Payment from '../assets/about/payment_16959732.png';
 import map from '../assets/about/map_10588713.png';
 import exp from '../assets/about/exper.png';
+import { useNavigate } from 'react-router-dom';
 
 const About = () => {
   const [isVisible, setIsVisible] = useState(false);
   const elementRef = useRef(null);
+  const navigate = useNavigate();
+
+const handleClick=()=>{
+  navigate('/about')
+}
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -70,8 +76,8 @@ const About = () => {
           <p className="text-gray-600 mb-8">
             Connect with us to help you make your financial decisions right and smart.
           </p>
-          <button className="flex items-center text-red-500 font-semibold hover:underline">
-            Watch Video
+          <button onClick={handleClick} className="flex items-center text-red-500 font-semibold hover:underline">
+            About us
             <svg
               className="w-5 h-5 ml-1"
               fill="none"

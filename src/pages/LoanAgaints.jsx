@@ -4,6 +4,7 @@ import Footer from '../components/Footer'
 import AboutLoanAgaints from '../components/LoanAgaints/AboutLoanAgaints'
 import LoanAgaintHeroSection from '../components/LoanAgaints/LoanAgaintHeroSection'
 import LoanAgainstFAQ from '../components/LoanAgaints/LoanAgainstFAQ'
+import TestimonialSlider from '../components/homeloan/TestimonialSlider'
 
 const LoanAgaints = () => {
   return (
@@ -12,6 +13,7 @@ const LoanAgaints = () => {
 <LoanAgaintHeroSection/>
 <AboutLoanAgaints/>
 <LoanAgainstFAQ/>
+<TestimonialSlider/>
 <Footer/>
     </div>
   )

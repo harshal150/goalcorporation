@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { FaMapMarkerAlt } from "react-icons/fa"; // Importing FontAwesome pin icon
 import Partners from "./Partner";
+import { useNavigate } from "react-router-dom";
 
 // Define pin locations with percentages to make them responsive
 const cities = [
@@ -21,6 +22,12 @@ const cities = [
 
 const MapComponent = () => {
   const [currentCityIndex, setCurrentCityIndex] = useState(0);
+  const navigate = useNavigate()
+
+
+  const handleClick=()=>{
+    navigate('/contact')
+  }
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -68,7 +75,7 @@ const MapComponent = () => {
                 >
                   {/* Pin Icon */}
                   <FaMapMarkerAlt
-                    className="text-blue-600 text-2xl z-20" // Styling the pin icon
+                    className="text-red-600 text-2xl z-20" // Styling the pin icon
                   />
                   {/* Pin Animation */}
                   <div
@@ -82,7 +89,7 @@ const MapComponent = () => {
           {/* Content Section */}
           <div className="flex flex-col justify-center items-center lg:items-start lg:ml-48 mt-10 lg:mt-0 lg:w-1/2 text-center lg:text-left">
             {/* Heading */}
-            <h1 className="text-3xl lg:text-6xl font-bold mb-2 ">
+            <h1 className="text-2xl lg:text-5xl font-bold mb-2 ">
               Now in 30+ Cities in India
             </h1>
 
@@ -106,12 +113,12 @@ const MapComponent = () => {
 
             {/* Contact Us Button */}
             <div className="mt-8">
-              <a
-                href="#!"
-                className="bg-[#1A237E] text-white px-4 py-2 lg:px-6 lg:py-3  rounded-lg text-lg font-bold hover:bg-[#4955d3] transition-colors"
+              <button
+                onClick={handleClick}
+                className="bg-[#1A237E] text-white px-4 py-2 lg:px-5 lg:py-2  rounded-lg text-lg font-bold hover:bg-[#4955d3] transition-colors"
               >
                 Contact Us
-              </a>
+              </button>
             </div>
           </div>
         </div>

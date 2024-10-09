@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import test1 from '../../assets/DirectorImage.jpg'
+import test2 from '../../assets/becomepartner.jpg'
+import test3 from '../../assets/Header/new1.jpg'
 
 const testimonials = [
   {
@@ -14,28 +16,28 @@ const testimonials = [
     text: "This platform has helped me bridge the gap between my business goals and successful execution.",
     author: "Ms. Jane Smith",
     role: "Entrepreneur",
-    image: test1
+    image: test2
   },
   {
     id: 3,
     text: "Their timely support and detailed information have been crucial for our growth and smooth operations.",
     author: "Mr. William Turner",
     role: "Operations Manager",
-    image: test1
+    image: test3
   },
   {
     id: 4,
     text: "The best service I've experienced. Always on time with payouts and transparent in their processes.",
     author: "Ms. Alice Johnson",
     role: "Freelancer",
-    image: test1
+    image: test2
   },
   {
     id: 5,
     text: "Their attention to detail and commitment to client success is remarkable.",
     author: "Mr. Kevin Brown",
     role: "Consultant",
-    image: test1
+    image: test3
   },
 ];
 
@@ -64,14 +66,14 @@ const TestimonialSlider = () => {
     <div className="flex items-center justify-center h-[90vh] bg-gradient-to-r from-white via-[#76a4df] to-[#E0EAF5]">
       <div className="max-w-7xl mx-auto flex items-center justify-between space-x-6">
         {/* Left arrow */}
-        <button onClick={prevSlide} className="text-white text-4xl p-2">
+        <button onClick={prevSlide} className="text-white text-5xl p-2">
           &#8592;
         </button>
 
         {/* Testimonial */}
         <div className="bg-white p-12 rounded-lg shadow-2xl flex items-center w-[80%] space-x-8 transition-transform transform hover:scale-105 duration-300 ease-in-out">
           <div className="w-2/3">
-            <h2 className="text-5xl font-extrabold text-blue-600 mb-8">
+            <h2 className="text-4xl font-extrabold text-blue-600 mb-8">
               Our Customer Success Stories
             </h2>
             <p className="text-xl text-gray-800 italic mb-6">
@@ -80,17 +82,17 @@ const TestimonialSlider = () => {
             <p className="font-bold text-xl text-gray-900">{testimonials[currentIndex].author}</p>
             <p className="text-lg text-gray-600">{testimonials[currentIndex].role}</p>
           </div>
-          <div className="w-1/3 flex justify-center items-center">
+          <div className="w-1/3 flex justify-center items-center ">
             <img
               src={testimonials[currentIndex].image}
               alt={testimonials[currentIndex].author}
-              className="w-50 h-50 rounded-full border-4 border-white shadow-lg"
+              className="w-[250px] h-[250px] rounded-full border-4 border-white shadow-lg "
             />
           </div>
         </div>
 
         {/* Right arrow */}
-        <button onClick={nextSlide} className="text-white text-4xl p-2">
+        <button onClick={nextSlide} className="text-white text-5xl p-2">
           &#8594;
         </button>
       </div>

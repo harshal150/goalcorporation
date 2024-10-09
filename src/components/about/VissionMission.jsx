@@ -10,9 +10,9 @@ const VisionMission = () => {
         <h1 className="text-5xl font-bold text-center text-indigo-800 mb-10">
           VISION & MISSION
         </h1>
-        <p className="text-xl text-gray-600 mt-4 max-w-2xl mx-auto">
+        {/* <p className="text-xl text-gray-600 mt-4 max-w-2xl mx-auto">
           At Goal Corporation, we take pride in our dedicated team, cutting-edge infrastructure, and commitment to customer satisfaction.
-        </p>
+        </p> */}
       </div>
 
       {/* Vision Section */}

@@ -60,24 +60,7 @@ const GroupCompany = () => {
             img: "https://swiperjs.com/images/projects/atropos.svg",
             alt: "Atropos",
           },
-          {
-            name: "RupeeBoss",
-            description: "Pixel perfect mobile UI components built with Tailwind CSS",
-            img: "https://swiperjs.com/images/projects/konsta.svg",
-            alt: "Konsta UI",
-          },
-          {
-            name: "MoneyLoan",
-            description: "Pixel perfect mobile UI components built with Tailwind CSS",
-            img: "https://swiperjs.com/images/projects/konsta.svg",
-            alt: "Konsta UI",
-          },
-          {
-            name: "Myntra",
-            description: "Pixel perfect mobile UI components built with Tailwind CSS",
-            img: "https://swiperjs.com/images/projects/konsta.svg",
-            alt: "Konsta UI",
-          },
+        
         ].map((company, index) => (
           <Link
             key={index}

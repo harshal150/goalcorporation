@@ -28,7 +28,7 @@ const timelineData = [
   {
     year: "2009",
     title:
-      "GOAL becomes a huge success and ventures into real Estate business with 2 companies.",
+      "GOAL becomes a huge success and ventures into diversified business - Real Estate, Construction ,",
     icon: <FaHandshake />,
     logo: logo1,
     position: "top",
@@ -39,7 +39,7 @@ const timelineData = [
       "Journey of Philanthropy begins with establishing of Goal International school",
     icon: <FaBriefcase />,
     logo: logo2,
-    position: "top",
+    position: "bottom",
   },
   {
     year: "2017",
@@ -47,12 +47,20 @@ const timelineData = [
       "Goal Expands its wings with establishing 3 more companies. Goal Infrastructure 2017: Goal BioMedicals 2021: Hubstairs CoWorks",
     icon: <FaBriefcase />,
     logo: logo1,
+    position: "top",
+  },
+  {
+    year: "2020",
+    title:
+      "Goal Expands its wings with co-working space and infrastructure development business",
+    icon: <FaBriefcase />,
+    logo: logo1,
     position: "bottom",
   },
   {
     year: "2024",
     title:
-      "All GOAL financial business under one umbrella Goal Corporation Pvt Ltd.",
+      "Goal become core corporate with consolidation and holding company formation",
     icon: <FaChartLine />,
     logo: logo2,
     position: "top",

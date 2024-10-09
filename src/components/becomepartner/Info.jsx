@@ -76,9 +76,13 @@ const PartnerSection = () => {
       </div>
             {/* Become a Partner Button */}
             <div className="text-center">
-        <button className="bg-red-500 hover:bg-red-600 text-white font-bold py-3 px-8 rounded-lg transition-all duration-300">
-          Become a Partner
-        </button>
+     <button
+  className="bg-red-500 hover:bg-red-600 text-white font-bold py-3 px-8 rounded-lg transition-all duration-300"
+  onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+>
+  Become a Partner
+</button>
+
       </div>
 
 
