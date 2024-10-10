@@ -9,7 +9,7 @@ import {
   faPinterest,
   faWordpress,
 } from "@fortawesome/free-brands-svg-icons";
-import logo from '../assets/Goal logo orange.png'
+import logo from "../assets/Goal logo orange.png";
 
 const quickLinks = [
   { value: "Company Profile", href: "/about" },
@@ -30,14 +30,6 @@ const jobInfo = [
   { value: "Service", href: "#!" },
   { value: "Payment", href: "#!" },
 ];
-
-
-
-
-
-
-
-
 
 const equipment = [
   { value: "Home Loan", href: "/homeloan" },
@@ -171,14 +163,14 @@ SocialItem.propTypes = {
 
 const Footer = () => {
   return (
-    <footer className="bg-[#E0EAF5] text-[#1A237E]  py-10">
+    <footer className="bg-[#E0EAF5] text-[#1A237E] py-10">
       <div className="container mx-auto px-4">
-        <div className="flex flex-col md:flex-row md:justify-between text-center md:text-left">
-          <div className="mb-6 md:mb-0">
+        <div className="flex flex-col md:flex-row md:justify-between text-left">
+          <div className="mb-6 md:mb-0 text-left">
             <img src={logo} height="50" alt="Logo" />
           </div>
-          <div className="flex flex-col md:flex-row md:w-3/4 justify-between ">
-            <div className="mb-6 md:mb-0">
+          <div className="flex flex-col md:flex-row md:w-3/4 justify-between">
+            <div className="mb-6 md:mb-0 text-left">
               <h5 className="font-bold mb-3 text-[20px]">Quick Links</h5>
               <ul className="space-y-2">
                 {quickLinks.map((qLink, i) => (
@@ -186,7 +178,7 @@ const Footer = () => {
                 ))}
               </ul>
             </div>
-            <div className="mb-6 md:mb-0">
+            <div className="mb-6 md:mb-0 text-left">
               <h5 className="font-bold mb-3 text-[20px]">Loans</h5>
               <ul className="space-y-2">
                 {equipment.map((equip, i) => (
@@ -194,7 +186,7 @@ const Footer = () => {
                 ))}
               </ul>
             </div>
-            <div className="mb-6 md:mb-0">
+            <div className="mb-6 md:mb-0 text-left">
               <h5 className="font-bold mb-3 text-[20px]">Social Media</h5>
               <ul className="space-y-2">
                 {socialMedia.map((media, i) => (
@@ -202,30 +194,22 @@ const Footer = () => {
                 ))}
               </ul>
             </div>
-            {/* <div className="mb-6 md:mb-0">
-              <h5 className="font-bold mb-3">Job Info</h5>
-              <ul className="space-y-2">
-                {jobInfo.map((job, i) => (
-                  <JobInfo job={job} key={i} />
-                ))}
-              </ul>
-            </div> */}
-            <div className="mb-6 md:mb-0">
+            <div className="mb-6 md:mb-0 text-left">
               <h5 className="font-bold mb-3 text-[20px]">Corporate Address</h5>
-            
-                <span  className=" text-gray-800 font-semibold hover:text-[#007BFF] transition-colors duration-300">Goal Corporation pvt ltd <br /> 
-                  No 250/15, Ground Floor,<br />
-                  6th Cross, 9th Main,<br />
-                  2nd Block, Jayanagar,<br />
-                  Bangalore - 560011. Karnataka India <br />
-                  Phone: +91 9606 96 5186 <br />
-                  E-Mail:info@goalcorporation.com</span> 
-            
+              <span className="text-gray-800 font-semibold hover:text-[#007BFF] transition-colors duration-300">
+                Goal Corporation Pvt Ltd <br />
+                No 250/15, Ground Floor,<br />
+                6th Cross, 9th Main,<br />
+                2nd Block, Jayanagar,<br />
+                Bangalore - 560011, Karnataka, India <br />
+                Phone: +91 9606 96 5186 <br />
+                E-Mail: info@goalcorporation.com
+              </span>
             </div>
           </div>
         </div>
 
-        <div className="mt-6 flex items-center justify-center md:justify-start">
+        <div className="mt-6 flex items-center justify-start text-left">
           <label htmlFor="footer-language" className="mr-2">
             Language:
           </label>
@@ -240,20 +224,15 @@ const Footer = () => {
         </div>
 
         <div className="mt-6">
-          <ul className="flex justify-center md:justify-start">
+          <ul className="flex justify-start">
             {sociaIcons.map((social, i) => (
               <SocialItem social={social} key={i} />
             ))}
           </ul>
         </div>
 
-        <div className="mt-6 text-center md:text-left text-gray-800">
+        <div className="mt-6 text-left text-gray-800">
           <span>Copyright &copy; Goal Corporation, All rights reserved</span>
-          {/* <div className="mt-2 md:mt-0 inline-block md:ml-2">
-            {quickLinks.map((item, i) => (
-              <NavigationItem item={item} key={i} />
-            ))}
-          </div> */}
         </div>
       </div>
     </footer>

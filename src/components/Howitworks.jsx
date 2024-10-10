@@ -30,7 +30,7 @@ const contents = [
 
 const ContentItem = ({ item, isVisible }) => (
   <div
-    className={`flex flex-col h-[93%] p-8 md:p-10 bg-white shadow-lg rounded-xl transition transform duration-500 ease-out w-[290px] border border-gray-200 relative overflow-hidden ${
+    className={`flex flex-col h-[95%] p-8 md:p-10 bg-white shadow-lg rounded-xl transition transform duration-500 ease-out w-[290px] border border-gray-200 relative overflow-hidden ${
       isVisible ? "translate-x-0 opacity-100" : "translate-x-full opacity-0"
     } hover:scale-105 hover:shadow-2xl`}
   >
@@ -45,9 +45,6 @@ const ContentItem = ({ item, isVisible }) => (
       </h4>
       <p className="opacity-75 mb-4 text-black text-left">{item.text}</p>
     </div>
-    {/* <button className="rounded-lg py-2 px-4 text-[15px] font-semibold  text-white mt-4 transition duration-300 ease-in-out hover:bg-blue-600 bg-[#4ade80] transform hover:scale-110 shadow-md">
-      Learn More
-    </button> */}
   </div>
 );
 
@@ -95,22 +92,24 @@ const Howitworks = () => {
           <h2 className="text-3xl leading-snug font-bold  md:text-5xl mb-4 text-[#1A237E] uppercase">
             Why Choose Us
           </h2>
-          {/* <p className="text-[17px] leading-normal opacity-90 text-[#1A237E] dark:text-black-200 font-semibold">
-            Discover how our solutions can benefit you
-          </p> */}
         </div>
         <div className="relative">
-          <div
-            ref={scrollRef}
-            className="flex space-x-6 overflow-hidden justify-center scroll-smooth snap-x"
-            style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
-          >
-            {contents.map((item, i) => (
-              <div key={i} className="snap-center content-card relative z-10">
-                <ContentItem item={item} isVisible={isItemVisible(i)} />
-              </div>
-            ))}
-          </div>
+        <div
+  ref={scrollRef}
+  className="grid grid-cols-1 md:grid-cols-2 lg:flex lg:space-x-6 overflow-hidden justify-center scroll-smooth snap-x"
+  style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
+>
+  {contents.map((item, i) => (
+    <div
+      key={i}
+      className="snap-center content-card relative z-10 flex justify-center mb-6 md:mb-0" // Add vertical space only for mobile view
+    >
+      <ContentItem item={item} isVisible={isItemVisible(i)} />
+    </div>
+  ))}
+</div>
+
+
         </div>
       </div>
     </section>

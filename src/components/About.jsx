@@ -90,29 +90,30 @@ const handleClick=()=>{
           </button>
         </div>
     
-        {/* Right section: Statistics */}
-        <div className="lg:w-1/2 grid grid-cols-1 sm:grid-cols-2 gap-x-1 gap-y-8">
-          <div className="text-center">
-            <img src={bank} alt="Partner Banks" className="w-16 h-16 mx-auto mb-4"/>
-            <p className="text-2xl font-bold">70+</p>
-            <p className="text-gray-500">Partner Banks & NBFCs</p>
-          </div>
-          <div className="text-center">
-            <img src={map} alt="Branches" className="w-16 h-16 mx-auto mb-4"/>
-            <p className="text-2xl font-bold">100+</p>
-            <p className="text-gray-500">Branches Across India</p>
-          </div>
-          <div className="text-center">
-            <img src={Payment} alt="Disbursal" className="w-16 h-16 mx-auto mb-4"/>
-            <p className="text-2xl font-bold">₹ 20k CR +</p>
-            <p className="text-gray-500">Successful Disbursal</p>
-          </div>
-          <div className="text-center">
-            <img src={exp} alt="Experience" className="w-16 h-16 mx-auto mb-4"/>
-            <p className="text-2xl font-bold">20+</p>
-            <p className="text-gray-500">Years of Experience</p>
-          </div>
-        </div>
+ {/* Right section: Statistics */}
+<div className="lg:w-1/2 grid grid-cols-2 gap-x-1 gap-y-8">
+  <div className="text-center">
+    <img src={bank} alt="Partner Banks" className="w-16 h-16 mx-auto mb-4"/>
+    <p className="text-2xl font-bold">70+</p>
+    <p className="text-gray-500">Partner Banks & NBFCs</p>
+  </div>
+  <div className="text-center">
+    <img src={map} alt="Branches" className="w-16 h-16 mx-auto mb-4"/>
+    <p className="text-2xl font-bold">100+</p>
+    <p className="text-gray-500">Branches Across India</p>
+  </div>
+  <div className="text-center">
+    <img src={Payment} alt="Disbursal" className="w-16 h-16 mx-auto mb-4"/>
+    <p className="text-2xl font-bold">₹ 20k CR +</p>
+    <p className="text-gray-500">Successful Disbursal</p>
+  </div>
+  <div className="text-center">
+    <img src={exp} alt="Experience" className="w-16 h-16 mx-auto mb-4"/>
+    <p className="text-2xl font-bold">20+</p>
+    <p className="text-gray-500">Years of Experience</p>
+  </div>
+</div>
+
 
         <style >{`
   @keyframes bounceIn {

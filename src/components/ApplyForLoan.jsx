@@ -2,11 +2,13 @@ import React from "react";
 
 const ApplyForLoan = () => {
 
-  
   const HandleClick = () => {
-    window.open('https://dexpertsystems.com/requestVista?query=Pv4/9aqzdpFVJ2ewt/6AWTmJDLwMN5Fvs/CBjh/a4I3vX1tMG%2BmFZ7BGIKIKPcP8', '_blank');
+    window.open(
+      'https://dexpertsystems.com/requestVista?query=Pv4/9aqzdpFVJ2ewt/6AWTmJDLwMN5Fvs/CBjh/a4I3vX1tMG%2BmFZ7BGIKIKPcP8',
+      '_blank'
+    );
   };
-  
+
   return (
     <section className="ezy__cta2 relative overflow-hidden py-10 md:py-12 bg-gradient-to-r from-sky-500 to-blue-900">
       {/* Decorative Shapes */}
@@ -34,11 +36,11 @@ const ApplyForLoan = () => {
           </div>
 
           {/* Button Section */}
-          <div className="col-span-12 md:col-span-6 text-left md:text-right pr-8">
+          <div className="col-span-12 md:col-span-6 flex justify-center md:justify-end mt-8 md:mt-0">
             <button
               type="submit"
               onClick={HandleClick}
-              className="bg-[#3B82F6]  hover:scale-105 text-white font-bold py-3 px-10 rounded-full shadow-lg transition-all duration-300 ease-in-out transform"
+              className="bg-[#3B82F6] hover:scale-105 text-white font-bold py-3 px-10 rounded-full shadow-lg transition-all duration-300 ease-in-out transform"
             >
               Apply for Loan
             </button>

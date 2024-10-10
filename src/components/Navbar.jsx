@@ -170,7 +170,7 @@ export const Navbar = () => {
       width="2em"
       height="2em"
       viewBox="0 0 24 24"
-      className="bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white rounded-full p-3 shadow-lg transition-all duration-300 transform hover:scale-110 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+      className="  transition-all duration-300 transform hover:scale-110 focus:outline-none "
     >
       <path fill="currentColor" d="m7 10l5 5l5-5z"></path>
     </svg>
