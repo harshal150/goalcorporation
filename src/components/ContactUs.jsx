@@ -52,8 +52,8 @@ const AboutContact = () => {
     <div className="home-page-container" style={{ overflowX: 'hidden' }}>
       <Navbar />
 
-      <section className="container mx-2 my-10">
-        <h1 className="text-4xl font-bold text-center text-indigo-800 mb-10">
+      <section className="container mx-auto px-4 sm:px-6 lg:px-8 my-10">
+        <h1 className="text-3xl md:text-4xl font-bold text-center text-indigo-800 mb-6 md:mb-10">
           CONTACT US
         </h1>
 
@@ -71,7 +71,7 @@ const AboutContact = () => {
             initial={{ x: "-100vw" }}
             animate={{ x: 0 }}
             transition={{ type: "spring", stiffness: 100, duration: 0.8 }}
-            className="space-y-6 lg:col-span-8"
+            className="space-y-6 lg:col-span-8 bg-white p-6 rounded-lg shadow-md"
           >
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <input
@@ -172,7 +172,7 @@ const AboutContact = () => {
             initial={{ x: "100vw" }}
             animate={{ x: 0 }}
             transition={{ type: "spring", stiffness: 100, duration: 0.8 }}
-            className="h-full lg:col-span-4"
+            className="h-full lg:col-span-4 bg-white p-6 rounded-lg shadow-md"
           >
             <AddressMap />
           </motion.div>

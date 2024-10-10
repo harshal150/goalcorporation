@@ -94,7 +94,7 @@ const BecomeAPartner = () => {
         isVisible ? "animate__animated animate__bounceIn" : ""
       }`}
     >
-      <h1 className="text-4xl font-bold text-center text-blue-700 capitalize mb-10">
+      <h1 className="text-4xl font-bold text-center text-blue-700 md:text-left capitalize mb-10">
         We are committed to becoming India’s Leading Loan Distributor!
       </h1>
 

@@ -1,9 +1,9 @@
 import React, { useRef, useEffect, useState } from "react";
 import PropTypes from "prop-types";
-import one from '../assets/HowItWorks/1.avif';
-import two from '../assets/HowItWorks/2.jpg';
-import three from '../assets/HowItWorks/3.jpg';
-import four from '../assets/HowItWorks/44.jpg';
+import one from "../assets/HowItWorks/1.avif";
+import two from "../assets/HowItWorks/2.jpg";
+import three from "../assets/HowItWorks/3.jpg";
+import four from "../assets/HowItWorks/44.jpg";
 
 const contents = [
   {
@@ -94,22 +94,20 @@ const Howitworks = () => {
           </h2>
         </div>
         <div className="relative">
-        <div
-  ref={scrollRef}
-  className="grid grid-cols-1 md:grid-cols-2 lg:flex lg:space-x-6 overflow-hidden justify-center scroll-smooth snap-x"
-  style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
->
-  {contents.map((item, i) => (
-    <div
-      key={i}
-      className="snap-center content-card relative z-10 flex justify-center mb-6 md:mb-0" // Add vertical space only for mobile view
-    >
-      <ContentItem item={item} isVisible={isItemVisible(i)} />
-    </div>
-  ))}
-</div>
-
-
+          <div
+            ref={scrollRef}
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 justify-center overflow-hidden"
+            style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
+          >
+            {contents.map((item, i) => (
+              <div
+                key={i}
+                className="snap-center content-card relative z-10 flex justify-center mb-6 md:mb-0" // Add vertical space only for mobile view
+              >
+                <ContentItem item={item} isVisible={isItemVisible(i)} />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
