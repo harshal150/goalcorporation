@@ -189,7 +189,7 @@ const GroupCompany = () => {
         ].map((company, index) => (
           <Link
             key={index}
-            className="group flex flex-col items-center justify-center w-[320px] sm:w-[380px] lg:w-[400px] h-full p-8 text-center bg-white rounded-xl shadow-lg border border-gray-200 hover:shadow-2xl hover:bg-indigo-50 transition-all duration-300 ease-in-out"
+            className="group flex flex-col items-center justify-center w-[300px] sm:w-[380px] lg:w-[380px] h-full p-4 text-center bg-white rounded-xl shadow-lg border border-gray-200 hover:shadow-2xl hover:bg-indigo-50 transition-all duration-300 ease-in-out"
             to="#"
             target="_blank"
             rel="noreferrer"
@@ -199,10 +199,10 @@ const GroupCompany = () => {
               src={company.img}
               alt={company.alt}
             />
-            <div className="font-bold text-[30px] sm:text-[30px] uppercase text-blue-600">
+            <div className="font-bold text-[25px] sm:text-[25px] capitalize text-blue-600">
               {company.name}
             </div>
-            <div className="text-sm opacity-75 mt-7">{company.description}</div>
+            <div className="text-sm text-left opacity-75 mt-7">{company.description}</div>
           </Link>
         ))}
       </div>

@@ -19,7 +19,7 @@ const AboutInfo = () => {
           }`}
         >
           <div className="image object-center text-center">
-            <img src={team} alt="Team" className="rounded-2xl" />
+            <img src={team} alt="Team" className="rounded-2xl h-[90vh]" />
           </div>
         </div>
 

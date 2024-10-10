@@ -9,6 +9,7 @@ import Ourteam from '../components/about/OurTeam'
 import AboutInfo from '../components/about/AboutInfo'
 import GroupCompany from '../components/about/GroupCompany'
 import RewardsRecog from '../components/about/RewardsRecog'
+import EmployeesSpeak from '../components/about/EmployeesSpeak'
 
 
 const About = () => {
@@ -23,6 +24,7 @@ const About = () => {
         <Ourteam/>
         <GroupCompany/>
         <RewardsRecog/>
+        <EmployeesSpeak/>
         <Footer/>
     </div>
   )

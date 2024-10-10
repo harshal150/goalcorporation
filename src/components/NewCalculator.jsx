@@ -39,8 +39,8 @@ const LoLoanCalculator = () => {
   const totalPayment = loanAmount + totalInterestPayable;
 
   return (
-<div className='max-w-full mt-4'>
-<div className="max-w-4xl mx-auto p-6 bg-gray-50 rounded-lg shadow-lg ">
+<div className='max-w-full mt-4 '>
+<div className="max-w-4xl mx-auto p-6 bg-gray-50 rounded-lg shadow-lg bg-gradient-to-r from-white via-[#d3e2f7] to-[#aac6e3] ">
            <h2 className="text-5xl font-bold text-center mb-12 text-blue-600">
           EMI <span className="text-[#4ade80]">Calculator</span>
         </h2>

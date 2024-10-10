@@ -53,7 +53,7 @@ const AboutContact = () => {
       <Navbar />
 
       <section className="container mx-2 my-10">
-        <h1 className="text-5xl font-bold text-center text-indigo-800 mb-10">
+        <h1 className="text-4xl font-bold text-center text-indigo-800 mb-10">
           CONTACT US
         </h1>
 

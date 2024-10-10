@@ -114,11 +114,7 @@ const Timeline = () => {
               key={index}
               data-index={index}
               ref={(el) => (itemRefs.current[index] = el)}
-              className={`flex flex-col items-center w-1/6 transition-transform duration-1000 ease-out ${
-                isItemVisible(index)
-                  ? "translate-x-0 opacity-100"
-                  : "translate-x-full opacity-0"
-              }`}
+              className={`flex flex-col items-center w-1/6 transition-transform duration-1000 ease-out `}
             >
               {item.position === "top" && (
                 <>

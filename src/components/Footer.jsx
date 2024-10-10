@@ -12,14 +12,14 @@ import {
 import logo from '../assets/Goal logo orange.png'
 
 const quickLinks = [
-  { value: "Company Profile", href: "#!" },
-  { value: "Director Message", href: "#!" },
-  { value: "Vision & Mission", href: "#!" },
-  { value: "Our Approach", href: "#!" },
+  { value: "Company Profile", href: "/about" },
+  { value: "Director Message", href: "/about" },
+  { value: "Vision & Mission", href: "/about" },
+  { value: "Our Approach", href: "/about" },
 ];
 
 const socialMedia = [
-  { value: "Facebook", href: "#!" },
+  { value: "Facebook", href: "www.facebook.com" },
   { value: "Instagram", href: "#!" },
   { value: "LinkedIn", href: "#!" },
   { value: "Twitter", href: "#!" },
@@ -40,12 +40,12 @@ const jobInfo = [
 
 
 const equipment = [
-  { value: "Home Loan", href: "#!" },
-  { value: "Loan Against Property", href: "#!" },
-  { value: "Working Capital Loan", href: "#!" },
-  { value: "Business Loan", href: "#!" },
-  { value: "Personal Loan", href: "#!" },
-  { value: "Debt Restructuring", href: "#!" },
+  { value: "Home Loan", href: "/homeloan" },
+  { value: "Loan Against Property", href: "/loanagaints" },
+  { value: "Working Capital Loan", href: "/workingcapital" },
+  { value: "Business Loan", href: "/businessloan" },
+  { value: "Personal Loan", href: "personalloan" },
+  { value: "Debt Restructuring", href: "/debtrestructure" },
 ];
 
 const language = [
@@ -249,11 +249,11 @@ const Footer = () => {
 
         <div className="mt-6 text-center md:text-left text-gray-800">
           <span>Copyright &copy; Goal Corporation, All rights reserved</span>
-          <div className="mt-2 md:mt-0 inline-block md:ml-2">
+          {/* <div className="mt-2 md:mt-0 inline-block md:ml-2">
             {quickLinks.map((item, i) => (
               <NavigationItem item={item} key={i} />
             ))}
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>
